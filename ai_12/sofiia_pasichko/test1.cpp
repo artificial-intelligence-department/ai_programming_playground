@@ -21,7 +21,7 @@ scanf("%d", &period);
 rate /= (double) 100;
 a=amount * pow(1+(rate/period), period*years);
 q=a-amount;
-printf ("Hello\n");
+printf ("Hello %s\n", name");
 printf( "The compound interest for a principal amount of %.2f at a rate of %.2f%% compounded %d times a year for %d years is: %.2f\n", amount, rate*100, period, years, q);
 printf("Total is: %.2f", a);
 return 0;
