@@ -4,7 +4,6 @@
 
 
 int main(){
-
 char name[100];
 double principal, rate;
 int years, period;
