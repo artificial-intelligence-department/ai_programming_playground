@@ -36,13 +36,7 @@ int main(){
         default:
             if (r[N-1] - r[1] > r[N-2] - r[0]){
                 cout << r[N-2] - r[0];
-            }
-
-            if (r[N-1] - r[1] < r[N-2] - r[0]){
-                cout << r[N-1] - r[1];
-            }
-            
-            if (r[N-1] - r[1] == r[N-2] - r[0]){
+            } else if (r[N-1] - r[1] <= r[N-2] - r[0]){
                 cout << r[N-1] - r[1];
             }
     }

@@ -26,12 +26,17 @@ int main(){
 // якщо так, то зараховуємо атракціон і йдемо до наступного
     int amount=0;
     int sum = c[0];
-    int i = 1;
-    while(sum <= k && i <= n){
+    int i = 0;
+    while(sum <= k && i < n){
         amount++;
-        sum += c[i];
         i++;
+        sum += c[i];
     }
+
+    /*int amount = 0;
+    for (int i = 0, sum = c[0]; sum <=k && i < n; i++, sum+=c[i]){
+        amount++;
+    }*/
 
     cout << amount << endl;
     return 0;
