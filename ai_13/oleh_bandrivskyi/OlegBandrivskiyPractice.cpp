@@ -20,7 +20,7 @@ int main(){
     printf("Enter the rate");
     scanf("%lf", &rate);
 
-    printf("Enter the preiod (1 for annually, 4 for quarterly, 12 for monthly)");
+    printf("Enter the preiod (1 for annually 4 for quarterly, 12 for monthly)");
     scanf("%u", &period);
 
     printf("Enter the years:");
