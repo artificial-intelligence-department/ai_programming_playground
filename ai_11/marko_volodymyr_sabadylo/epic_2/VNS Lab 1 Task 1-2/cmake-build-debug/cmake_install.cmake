@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/marko/Desktop/final
+# Install script for directory: C:/Users/marko/ai_programming_playground/ai_11/marko_volodymyr_sabadylo/epic_2/VNS Lab 1 Task 1-2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/marko/Desktop/final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/marko/ai_programming_playground/ai_11/marko_volodymyr_sabadylo/epic_2/VNS Lab 1 Task 1-2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

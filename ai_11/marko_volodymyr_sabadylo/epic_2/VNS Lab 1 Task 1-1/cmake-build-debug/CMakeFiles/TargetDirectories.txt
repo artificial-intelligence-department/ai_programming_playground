@@ -1,3 +1,3 @@
-D:/proj/cmake-build-debug/CMakeFiles/proj.dir
-D:/proj/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/proj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/marko/ai_programming_playground/ai_11/marko_volodymyr_sabadylo/epic_2/VNS Lab 1 Task 1-1/cmake-build-debug/CMakeFiles/proj.dir
+C:/Users/marko/ai_programming_playground/ai_11/marko_volodymyr_sabadylo/epic_2/VNS Lab 1 Task 1-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/marko/ai_programming_playground/ai_11/marko_volodymyr_sabadylo/epic_2/VNS Lab 1 Task 1-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
