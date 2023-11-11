@@ -7,7 +7,7 @@ int main(){
     char name[100];
 
     printf("Enter your name:");
-    scanf("%99[^\n]", &name);
+    scanf("%s[^\n]", &name);
 
     printf("Enter the principal amount:");
     scanf("%lf",&principal);
@@ -23,10 +23,10 @@ int main(){
 
     rate = rate/100;
     amount = principal * pow(1 +(rate / compoundingNum), compoundingNum * years); 
-    income = amount = principal;
+    income = amount - principal;
 
     printf("Hello, %s! \n", name);
-    printf("The compound interest for a principal of %.2f at a rate of %.2f%% compounded %d times a year for %d year for %d years is: %.2f\n", principal , rate * 100, compoundingNum, years, income);
+    printf("The compound interest for a principal of %.2lf at a rate of %.2lf%% compounded %d times a year for %d year for %d years is: %.2f\n", principal , rate * 100, compoundingNum, years, income);
     printf("The total amount after %d years is: %.2lf", years, amount);   
     
     return 0;
