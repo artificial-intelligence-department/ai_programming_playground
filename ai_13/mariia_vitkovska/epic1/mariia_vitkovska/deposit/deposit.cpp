@@ -3,14 +3,14 @@
 #include <string>
 #include <iostream>
 
-
-int main()
-{
     char name[32];
     int principle;
     double rate;
     int years;
     int period;
+
+int main()
+{
 
 
     float total {principle};
