@@ -1,28 +1,24 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-    int sides[5];
+    long long sides[5];
 
     for (int i = 0; i < 5; ++i) {
-        std::cin >> sides[i];
+        cin >> sides[i];
 
         if (sides[i] <= 0) {
-            std::cout << "ERROR" << std::endl;
+            cout << "ERROR" << endl;
+            return 0;
+        }
+
+        if (i > 0 && sides[i] > sides[i - 1]) {
+            cout << "LOSS" << endl;
             return 0;
         }
     }
 
-
-    for (int i = 0; i < 4; ++i) {
-        if (sides[i] < sides[i + 1]) {
-            std::cout << "LOSS";
-            return 0;
-        }
-
-    }
-
-    std::cout << "WIN" << std::endl;
+    cout << "WIN" << endl;
 
     return 0;
 }
-
