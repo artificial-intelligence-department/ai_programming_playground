@@ -8,8 +8,8 @@ double suma_of_numbers(int a, int b)
 
 std::complex<double> suma_of_numbers(double a[2], double b[2]) 
 {
-    std::complex<double> z1(a[0], b[0]); // 1 + 3i
-    std::complex<double> z2(a[1], b[1]); // 2 + 1i
+    std::complex<double> z1(a[0], b[0]); // 1 + 3
+    std::complex<double> z2(a[1], b[1]); // 2i + 1i
 
     return z1 + z2;
 }
