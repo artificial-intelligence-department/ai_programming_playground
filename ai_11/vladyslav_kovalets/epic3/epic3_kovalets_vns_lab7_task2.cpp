@@ -1,7 +1,7 @@
 #include <iostream>
 #include <complex>
 
-double suma_of_numbers(int a, int b) 
+int suma_of_numbers(int a, int b) 
 {
     return a + b;
 }
@@ -16,7 +16,7 @@ std::complex<double> suma_of_numbers(double a[2], double b[2])
 
 int main() 
 {
-    int r = suma_of_numbers(3, 4);
+    int r = suma_of_numbers(3,  4);
     std::cout << "Sum of numbers: " << r << std::endl;
 
     double a[2] = {1.0, 3.0};
