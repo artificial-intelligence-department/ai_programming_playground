@@ -1,0 +1,88 @@
+<mxfile host="Electron" modified="2023-11-05T23:08:53.864Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" version="22.0.2" etag="9GuOWqPdJkewhx1pjs3t" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1100" dy="942" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="1390" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-0" target="nEqJXz8P1CxgyhgF1B1w-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-0" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;main&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="99" y="530" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="149" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-4" value="Input :&lt;br&gt;num&amp;nbsp;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="84" y="620" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-10" target="nEqJXz8P1CxgyhgF1B1w-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-10" value="&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;DigitalRoot&lt;/font&gt;&lt;/b&gt;(num)" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;align=center;labelPosition=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="710" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-11" target="nEqJXz8P1CxgyhgF1B1w-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-11" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#009900&quot;&gt;DigitalRoot&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Input(num)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="509" y="350" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-29" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-12" target="nEqJXz8P1CxgyhgF1B1w-26">
+          <mxGeometry x="0.013" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-12" value="num &amp;lt; 10&lt;br&gt;?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="519" y="434" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-25" value="return(num)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="639" y="532" width="95" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-26" value="return(&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#009900&quot;&gt;&lt;b&gt;DigitalRoot&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;(&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#0000ff&quot;&gt;SumDigits&lt;/font&gt;&lt;/span&gt;(num))" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;labelPosition=center;align=center;fontColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="532" width="289" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-28" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-12" target="nEqJXz8P1CxgyhgF1B1w-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-34" target="nEqJXz8P1CxgyhgF1B1w-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-34" value="&lt;b&gt;&lt;font color=&quot;#0000ff&quot;&gt;SumDigits&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Input(num)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="664" y="80" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-35" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-36" target="nEqJXz8P1CxgyhgF1B1w-38">
+          <mxGeometry x="0.013" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-36" value="num &amp;lt; 10&lt;br&gt;?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="674" y="164" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-37" value="return(num)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="795" y="266" width="89" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-38" value="return(num % 10 +&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#0000ff&quot;&gt;SumDigits&lt;/font&gt;&lt;/b&gt;(num / 10))" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;labelPosition=center;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="360" y="266" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-39" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-36" target="nEqJXz8P1CxgyhgF1B1w-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-40" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;In this problem, recursion is used to find the digital root of a number by sequentially summing all its digits.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;The SumDigits function takes the last digit of the number and recursively calls itself for the remaining digits.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;The DigitalRoot function calls SumDigits and then recursively calls itself for the sum of the digits,&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp;continuing this process until only one digit is left - the digital root.&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="260" y="690" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nEqJXz8P1CxgyhgF1B1w-42" target="nEqJXz8P1CxgyhgF1B1w-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-42" value="Output :&lt;br&gt;n = DigitalRoot(num)&amp;nbsp;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="65" y="799" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nEqJXz8P1CxgyhgF1B1w-44" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="109.5" y="892" width="81" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
