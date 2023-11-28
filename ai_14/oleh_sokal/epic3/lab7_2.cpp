@@ -2,16 +2,8 @@
 #include <string>
 using namespace std;
 
-int min_element(int n, int a[]) {
-    int min = a[0];
-    for (int i = 1; i < n; i++)
-        if (a[i] < min)
-            min = a[i];
-    return min;
-}
-
-int findMinWordLength(const int arr[], int n) {
-    int min = arr[0];
+template <typename T> T findMinElement(const T arr[], int n) {
+    T min = arr[0];
     for (int i = 1; i < n; i++) {
         if (min > arr[i]) {
             min = arr[i];
@@ -34,7 +26,7 @@ int main() {
         int count = 0;
         int arr[100] = {0};
 
-        for (int i = 0; i < sentence.length(); i++) {
+        for (int i = 0; i < (sentence.length() + 1); i++) {
             if (sentence[i] != ' ' && sentence[i] != '\0') {
                 count++;
             } else {
@@ -44,7 +36,7 @@ int main() {
             }
         }
 
-        int min = findMinWordLength(arr, n);
+        int min = findMinElement(arr, n);
 
         std::cout << "Length of smallest word: " << min << std::endl;
 
@@ -63,7 +55,7 @@ int main() {
             cin >> a[i];
         }
 
-        int result = min_element(n, a);
+        int result = findMinElement(a, n);
         cout << "Мінімальний елемент: " << result << endl;
 
         return 0;
