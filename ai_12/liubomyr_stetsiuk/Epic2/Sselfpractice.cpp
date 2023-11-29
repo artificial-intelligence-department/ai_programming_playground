@@ -1,54 +1,68 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
-  int numbers[5];
+int a = 1;
+int b = 2;
+int c = 5;
+int d = 10;
+int e = 20;
+int f = 50;
+int g = 100;
+int h = 200;
+int i = 500;
+long long cpresent;
+long long num = 0;
+cin >> cpresent;
+if(cpresent <= 0){
+return 0;
+}
+while(cpresent >= i){
+cpresent -= i;
+num++;
+}
 
-  cout << "Введіть 5 цілих чисел: ";
-  for (int i = 0; i < 5; i++) {
-    int num;
-    cin >> num;
-    numbers[i] = num;
-  }
+while(cpresent >= h){
+cpresent -= h;
+num++;
+}
 
-  int pos = -1, posCount = 0;
-  for (int i = 0; i < 5; i++) {
-    int num = numbers[i];
-    if (num > 0) {
-      posCount++;
-      if (posCount == 2 && pos == -1) {
-        pos = i;
-      }
-    }
-  }
+while(cpresent >= g){
+cpresent -= g;
+num++;
+}
 
-  int min = numeric_limits<int>::max();
-  int minPos = -1;
-  for (int i = 0; i < 5; i++) {
-    if (numbers[i] < min) {
-      min = numbers[i];
-      minPos = i++;
-    }
-  }
-  
-  int prod = 1;
-  for (int i = 0; i < 5; i++) {
-    if (numbers[i] % 2 == 0 && numbers[i] != 0) {
-      prod *= numbers[i];
-    }
-  }
+while(cpresent >= f){
+cpresent -= f;
+num++;
+}
 
-  int sum = 0;
-  for (int i = 0; i < 5; i++) {
-    sum += numbers[i];
-  }
-  pos++;
-  minPos++;
-  cout << "Позиція другого позитивного числа: " << pos << endl;
-  cout << "Мінімальне значення в масиві: " << min << endl;
-  cout << "Позиція мінімального значення: " << minPos << endl;
-  cout << "Добуток всіх парних чисел (крім 0): " << prod << endl;
-  cout << "Сума перших п'яти елементів: " << sum << endl;
+while(cpresent >= e){
+cpresent -= e;
+num++;
+}
 
-  return 0;
+while(cpresent >= d){
+cpresent -= d;
+num++;
+}
+
+while(cpresent >= c){
+cpresent -= c;
+num++;
+}
+
+while(cpresent >= b){
+cpresent -= b;
+num++;
+}
+
+while(cpresent >= a){
+cpresent -= a;
+num++;
+}
+
+cout<<num<<endl;
+
 }
