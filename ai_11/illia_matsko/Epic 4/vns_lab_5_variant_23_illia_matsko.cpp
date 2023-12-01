@@ -66,7 +66,6 @@ int main()
         cin >> arr[i];
     }
 
-
     for(int i=0; i<n; i++)
     {
         int counter = 1;
@@ -87,7 +86,6 @@ int main()
             result[k+1][i] = arr[i] - arr[i]/2;
         }
     }
-
 
     cout << endl;
     for(int i=0; i<n; i++)
