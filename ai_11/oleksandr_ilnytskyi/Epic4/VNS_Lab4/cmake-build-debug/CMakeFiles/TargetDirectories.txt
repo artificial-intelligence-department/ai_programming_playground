@@ -1,0 +1,3 @@
+C:/Users/home1/OneDrive/University/Epics/Epic4/VNS_Lab4/cmake-build-debug/CMakeFiles/VNS_Lab4.dir
+C:/Users/home1/OneDrive/University/Epics/Epic4/VNS_Lab4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/home1/OneDrive/University/Epics/Epic4/VNS_Lab4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

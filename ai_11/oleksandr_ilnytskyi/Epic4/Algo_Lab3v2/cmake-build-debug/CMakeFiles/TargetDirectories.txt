@@ -1,0 +1,3 @@
+C:/Users/home1/OneDrive/University/Epics/Epic4/Algo_Lab3v2/cmake-build-debug/CMakeFiles/Algo_Lab3v2.dir
+C:/Users/home1/OneDrive/University/Epics/Epic4/Algo_Lab3v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/home1/OneDrive/University/Epics/Epic4/Algo_Lab3v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
