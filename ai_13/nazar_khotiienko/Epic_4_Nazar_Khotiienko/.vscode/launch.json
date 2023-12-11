@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/admin/Documents/ai_programming_playground/ai_13/nazar_khotiienko/Epic_4_Nazar_Khotiienko",
+      "program": "/Users/admin/Documents/ai_programming_playground/ai_13/nazar_khotiienko/Epic_4_Nazar_Khotiienko/build/Debug/outDebug"
+    }
+  ]
+}
