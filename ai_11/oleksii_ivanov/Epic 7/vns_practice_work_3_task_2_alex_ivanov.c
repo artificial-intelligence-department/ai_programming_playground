@@ -17,7 +17,7 @@ int main() {
     set_utf8();
 
     double H, B, S;
-    wprintf(L"Введіть висоту, ширину та глибину ящика (м^3, в одному рядку): ");
+    wprintf(L"Введіть висоту, ширину та глибину ящика (м, в одному рядку): ");
     wscanf(L"%lf %lf %lf", &H, &B, &S);
 
     double bolt_count = calc_bolt_count(H, B, S);

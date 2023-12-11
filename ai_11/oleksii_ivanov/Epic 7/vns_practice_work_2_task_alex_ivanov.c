@@ -15,7 +15,7 @@ int main() {
     int alternates = 0;
 
     double prev_y = y(x), curr_y;
-    printf("x = %lf, y(x) = %lf\n", x, prev_y);
+    // printf("x = %lf, y(x) = %lf\n", x, prev_y);
     while (x <= upper_bound + epsilon) {
         curr_y = y(x);
 //        printf("x = %lf, y(x) = %lf\n", x, curr_y);
