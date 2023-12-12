@@ -11,7 +11,7 @@ int main()
 {
 
     cin >> N;
-    int grid[8][8];
+    int grid[N][N];
     for(int i = 0; i < N; i++){
         string temp;
         cin >> temp;
@@ -43,21 +43,31 @@ int main()
             continue;
         }
         for (int j = 0; j < N; ++j) {
+            int f=0;
             if (grid[k[i][0]][j] != 0) {
                 nums[grid[k[i][0]][j]-1]=0;
-                c--;
+                f=1;
             }
             if (grid[j][k[i][1]] != 0){
                 nums[grid[j][k[i][1]]-1]=0;
+                f=1;
+            }
+            if (f==1){
                 c--;
             }
         }
-        cout <<c << endl;
-        for (int j = 0; j < N; j++) {
+        if (c>0){
+            cout <<c << endl;
+            for (int j = 0; j < N; j++) {
             if (nums[j]!=0){
                 cout << j+1 << " ";
             }
         }
+        }
+        else{
+            cout <<0 << endl;
+        }
+        
         cout << endl;
         cout << endl;
     }
