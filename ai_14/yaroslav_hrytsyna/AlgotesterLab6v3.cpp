@@ -43,10 +43,9 @@ int main()
             continue;
         }
         for (int j = 0; j < N; ++j) {
-            int f=0;
             if (grid[k[i][0]][j] != 0) {
                 nums[grid[k[i][0]][j]-1]=0;
-                f=1;
+                c--;
             }
             if (grid[j][k[i][1]] != 0){
                 nums[grid[j][k[i][1]]-1]=0;
