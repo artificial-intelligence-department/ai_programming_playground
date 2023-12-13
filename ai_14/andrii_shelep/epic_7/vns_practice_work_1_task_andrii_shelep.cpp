@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cmath> //підключаю заголовковий файл cmath, щоб мати змогу прауювати з математичними функціями
 
-double CalculateA(double x, double y) // функція для обчислення значення a
+double Calculate(double x, double y) // функція для обчислення значення a
 {
     double result = (sqrt(abs(x-1))-sqrt(y))/(1+pow(x,2)/2+pow(y,2)/4);  //використовую sqrt для кореня та функцію pow для підняття до степеня
     return result;
 }
 
-double CalculateB(double x) // функція для обчислення значення b
+double Calculate(double x) // перевантажена функція для обчислення значення b
 {
     double result = 1/tan(exp(x+3)); //реалізовую ctg (котангенс) через вираз 1/tg
     return result;
@@ -22,8 +22,8 @@ int main(){
     cout << "Введіть значення y: ";
     cin >> y;   //вводимо значення y
 
-    double a = CalculateA(x, y); //викликаємо функцію для обчислення значення a
-    double b = CalculateB(x); //викликаємо функцію для обчислення значення b
+    double a = Calculate(x, y); //викликаємо функцію для обчислення значення a
+    double b = Calculate(x); //викликаємо функцію для обчислення значення b
 
     cout << endl << "      Results" << endl; //виводимо результати
     cout << "a = " << a << endl;
