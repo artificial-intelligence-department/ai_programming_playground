@@ -7,7 +7,6 @@ int main()
     double result;
     const double verst = 1066.8;
 
-    // 4. в коді використана як мінімум одна цілочисельна константа
     std::cout << "Enter the km: ";
     std::cin >> km;
 

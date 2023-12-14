@@ -1,11 +1,53 @@
 #include <iostream>
 #include <cmath>
+#include <sstream>
+#include <fstream>
 
 // 14. в коді використано структури 
 struct Point 
 {
     int x, y;
 };
+
+bool file(const char *name, const char *content)
+{
+    //19. в коді використано функції роботи з файлами, для того, щоб записати у файл
+    std::ofstream outputFile(name);
+    if (!outputFile.is_open()) 
+    {
+        std::cout << "Unable to open" << std::endl;
+        return 0;
+    }
+
+    //11. в коді використано оператори break і continue
+    int i = 0;
+    for(;i!=5;)
+    {
+        if(i==4)
+        {
+            break;
+        }
+        else
+        {
+            i++;
+            continue;
+        }
+    }
+
+    //20. в коді використано функції роботи з файлами, для того, щоб зчитати з файлу
+    std::istringstream contentStream(content); 
+    std::string line1;
+
+    while (std::getline(contentStream, line1)) 
+    {
+        if (!line1.empty()) 
+        {
+            outputFile << line1 << std::endl;
+        }
+    }
+    outputFile.close();
+    return 1;
+}
 
 int main() 
 {
@@ -25,5 +67,8 @@ int main()
     point.x = 5;
     point.y = 7;
 
-    std::cout << "\nPoint: (" << point.x << ", " << point.y << ")";
+
+    const char *nameCStr = "f1";
+    const char *contentCStr = "f2";
+    int result = file(nameCStr, contentCStr);
 }
