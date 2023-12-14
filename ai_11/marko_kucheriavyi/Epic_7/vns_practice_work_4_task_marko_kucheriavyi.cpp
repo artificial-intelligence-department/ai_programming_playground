@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int sumOfelements(int n){
+int sumOfelements(int n){ // 16. в коді використано параметри та аргументи функції
     int sum = 0;
     for (int i = 1; i <= n; i++){
         sum+=i;
