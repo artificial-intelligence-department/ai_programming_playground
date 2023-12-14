@@ -15,8 +15,14 @@ int main() {
     cout << "Enter the value of x: ";
     cin >> x; // Введення значення 'x' користувачем.
 
-    double seriesSum = calculateSeriesSum(x);
-    cout << "Sum of the series = " << seriesSum << endl;// Виведення обчисленої суми ряду.
+     // Перевірка на введення від'ємного числа
+    if (x < 0) {
+        cout << "Please enter a non-negative number." << endl;
+    } else {
+        double seriesSum = calculateSeriesSum(x);
+        cout << "Sum of the series = " << seriesSum << endl;// Виведення обчисленої суми ряду.
+    }
+    
 
     return 0;
 }
