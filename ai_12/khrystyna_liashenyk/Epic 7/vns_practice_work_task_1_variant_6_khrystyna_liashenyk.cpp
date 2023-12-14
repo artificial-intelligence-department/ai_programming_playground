@@ -14,4 +14,6 @@ int main (){
     P = sqrt(pow(x, 2) + b) - (pow(b, 2) * pow(sin(x + a), 3) / x) * y;
     cout<<"y= "<<y<<endl;//виводимо у
     cout<<"P= "<<P;//виводимо Р
+    
+    return 0;
 }
