@@ -188,14 +188,16 @@ int getArrayProd()
     file.open(name, ios::in);
     int* arr = new int[m_size];
     int s;
-    for(int i = 0; i < m_size; i++)
+    int i = 0;
+    while(i < m_size) // Вимога 9 - в коді використаний while цикл
     {
         file >> s;
         arr[i] = s;
+        i++;
     }
     file.close();
 
-    return productCount(arr, 0, 1);
+    return productCount(arr, 0, 1); //  Вимога 15 - в коді використано перевантаження функції 
 }
 void deleteFile()
 {
