@@ -3,7 +3,7 @@
 #include <cmath>
 #include <ctime>
 
-const int CONSTANT_VALUE = 1004;
+const int CONSTANT_VALUE = 1030;
 const char FILE_NAME[] = "output_file.txt";
 
 void generateMatrix(float**& matrix, bool floatingPoint) {
