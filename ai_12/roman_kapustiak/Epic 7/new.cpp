@@ -63,13 +63,13 @@ float** createM(int size)
     float** m; // Вимога 7 - в коді використаний двовимірний масив 
     m = new float*[size];
 
-    for(int i = 0; i < size; i++) // // Вимога 10 - в коді використаний for цикл 
+    for(int i = 0; i < size; i++) // Вимога 10 - в коді використаний for цикл 
     {
         m[i] = new float[size];
 
         for(int j = 0; j < size; j++)
         {
-            m[i][j] = (pow(-1 * i, j) + sin(j) + 3.1) / pow(j+1, 2);
+            m[i][j] = (pow(-1 * i, j) + sin(j) + 3.1) / pow(j+1, 2); //  Вимога 17 в коді використано математичні операції та математичні функції
         }
     }
 
@@ -166,7 +166,7 @@ bool saveArray(int* arr)
 
     return true;
 }
-int productCount(int *ar, int index, int prod)
+int productCount(int *ar, int index, int prod) //  Вимога 16 - в коді використано параметри та аргументи функції	
 {
     if(index == m_size)
     {
