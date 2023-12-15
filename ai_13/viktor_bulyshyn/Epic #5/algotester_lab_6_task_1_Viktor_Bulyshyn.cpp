@@ -1,57 +1,48 @@
-#include <iostream>
-#include <vector>
 #include <algorithm>
-#include <set>
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <vector>
 
-using namespace std;
+bool sort(char a, char b) {
+    return a > b;
+}
 
 int main() {
-    const int ALPHABET_SIZE = 26;
+    int N, K, m = 0;
+    std::cin >> N >> K;
+    std::string t, res;
+    std::vector<std::string> s;
+    std::unordered_map<std::string, int> map;
 
-    // Зчитування вхідних даних
-    int N, K;
-    cin >> N >> K;
+    for (int i = 0; i < N; i++) {
+        std::cin >> t;
+        std::transform(t.begin(), t.end(), t.begin(), ::tolower);
+        s.push_back(t);
+        map[t]++;
+    }
 
-    // Масив для зберігання кількості входжень кожної букви
-    vector<int> letterCount(ALPHABET_SIZE, 0);
-
-    // Зчитування слів та обчислення кількості букв
-    for (int i = 0; i < N; ++i) {
-        string word;
-        cin >> word;
-
-        // Масив для відстеження, чи була буква вже врахована для слова
-        set<char> counted;
-
-        // Обробка кожного символу у слові
-        for (char letter : word) {
-            char lowercaseLetter = tolower(letter);
-            int index = lowercaseLetter - 'a';
-
-            // Якщо букву ще не враховано та кількість входжень цього слова менше або рівно K
-            if (counted.find(lowercaseLetter) == counted.end() && letterCount[index] < K) {
-                // Збільшуємо кількість входжень та відзначаємо букву як враховану
-                letterCount[index]++;
-                counted.insert(lowercaseLetter);
-            }
+    for (int i = 0; i < N; i++) {
+        int count = map[s[i]];
+        if (count >= K) {
+            m += count;
+            res += s[i];
         }
     }
 
-    // Виведення результатів
-    vector<char> uniqueLetters;
-    for (int i = 0; i < ALPHABET_SIZE; ++i) {
-        if (letterCount[i] >= K) {
-            uniqueLetters.push_back('a' + i);
+    std::sort(res.begin(), res.end());
+    auto last = std::unique(res.begin(), res.end());
+    res.erase(last, res.end());
+
+    std::sort(res.begin(), res.end(), sort);
+
+    if (m >= K) {
+        std::cout << res.size() << std::endl;
+        for (auto ch : res) {
+            std::cout << ch << " ";
         }
-    }
-
-    // Сортування унікальних букв від останньої до першої у алфавіті
-    sort(uniqueLetters.rbegin(), uniqueLetters.rend());
-
-    // Виведення кількості та унікальних букв
-    cout << uniqueLetters.size() << endl;
-    for (char letter : uniqueLetters) {
-        cout << letter << " ";
+    } else {
+        std::cout << "Empty!";
     }
 
     return 0;
