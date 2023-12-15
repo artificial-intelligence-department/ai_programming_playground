@@ -31,7 +31,7 @@ int main()
 
     cout << "\nTASK 2\n\n";
     cout << "data: ";
-    cin >> data;
+    cin >> data;  // Вимога 21 - в коді використано оператори виведення та введення даних
 
     sortM(m, data * PR_NUM);
 
