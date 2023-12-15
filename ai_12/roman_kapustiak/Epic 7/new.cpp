@@ -17,6 +17,7 @@ bool saveArray(int* arr);
 int productCount(int *ar, int index, int prod);
 int getArrayProd();
 void deleteFile();
+void printAr(int* a);
 
 int main()
 {
@@ -40,10 +41,8 @@ int main()
     srand (time(NULL));
 
     int* res = sumM(m);
-    for (int i = 0; i < m_size; i ++)
-    {
-        cout << res[i] << " ";
-    }
+    printAr(res);
+
     cout << endl;
     
     cout << "\nTASK 4\n\n";
@@ -203,4 +202,11 @@ void deleteFile()
     remove(name);
     cout << "Deleted\n";
     return;
+}
+void printAr(int* a)
+{
+    for (int i = 0; i < m_size; i++)
+    {
+        cout << a[i] << " ";
+    }
 }
