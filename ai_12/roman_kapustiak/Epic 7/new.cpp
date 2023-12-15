@@ -151,7 +151,7 @@ int* sumM(float** m)
 bool saveArray(int* arr)
 {
     fstream file;
-    file.open(name, ios::out);
+    file.open(name, ios::out); // Вимога 20 - в коді використано функції роботи з файлами, для того, щоб зчитати з файлу
 
     if(!(file))
     {
@@ -184,7 +184,7 @@ int productCount(int *ar, int index, int prod) //  Вимога 16 - в коді
 }
 int getArrayProd()
 {
-    fstream file;
+    fstream file; // Вимога 19 - в коді використано функції роботи з файлами, для того, щоб записати у файл
     file.open(name, ios::in);
     int* arr = new int[m_size];
     int s;
