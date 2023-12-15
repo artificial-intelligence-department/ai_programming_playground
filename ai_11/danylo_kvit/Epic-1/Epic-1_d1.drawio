@@ -1,0 +1,39 @@
+<mxfile host="Electron" modified="2023-11-24T18:11:28.142Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="Cu5u-gY3OqoM6ThkqRdl" version="22.1.2" type="device">
+  <diagram name="Сторінка-1" id="0liA8Ej3YOuRwNBv2-SD">
+    <mxGraphModel dx="523" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WDut6IQsrc23tSPN2Qs--3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="WDut6IQsrc23tSPN2Qs--1" target="WDut6IQsrc23tSPN2Qs--2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WDut6IQsrc23tSPN2Qs--1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="150" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WDut6IQsrc23tSPN2Qs--5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WDut6IQsrc23tSPN2Qs--2" target="4ue3drG2nbAOkivoNRd7-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WDut6IQsrc23tSPN2Qs--2" value="Input name, principal, rate, number, time" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="35" y="250" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4ue3drG2nbAOkivoNRd7-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WDut6IQsrc23tSPN2Qs--15" target="WDut6IQsrc23tSPN2Qs--17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WDut6IQsrc23tSPN2Qs--15" value="Output sum" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WDut6IQsrc23tSPN2Qs--17" value="End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4ue3drG2nbAOkivoNRd7-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4ue3drG2nbAOkivoNRd7-1" target="WDut6IQsrc23tSPN2Qs--15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4ue3drG2nbAOkivoNRd7-1" value="sum = principal*(1+rate/100)^(time*period) - sum" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="350" width="170" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
