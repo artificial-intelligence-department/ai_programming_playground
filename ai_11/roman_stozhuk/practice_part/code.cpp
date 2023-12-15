@@ -19,6 +19,7 @@ long **fillMatrixPair() {
             double p=(a+b+c)/2.0;
             matrix[i][j] = (long)(2.0/a)*(sqrt(p*(p-a)*(p-b)*(p-c))); 
             //примусово перетворено в long щоб отримати ціле число
+            a+=1, b+=2, c+=3; 
         }
     }
 }
