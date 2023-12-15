@@ -82,13 +82,17 @@ void sortM(float** m, double data)
     {
         for (int i = 0; i < m_size - 1; i++) {
 
-            for (int j = 0; j < m_size - i - 1; j++)
+            for (int j = 0; ; j++)
             {
                 if (m[j][k] > m[j + 1][k])
                 {
                     temp = m[j][k];
                     m[j][k] = m[j + 1][k];
                     m[j + 1][k] = temp;
+                }
+                if(j < m_size - i - 1)
+                {
+                    break; // Вимога 11 - в коді використано оператори break і continue
                 }
             }
         }
