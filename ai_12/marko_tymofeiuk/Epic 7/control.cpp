@@ -276,13 +276,5 @@ int main()
     std::cout << std::endl;
     processMatrix(intMatrix, number * 2);
 
-    // Додамо do-while цикл
-    int counter = 0;
-    do
-    {
-        std::cout << "Counter: " << counter << std::endl;
-        counter++;
-    } while (counter < 5);
-
     return 0;
 }
