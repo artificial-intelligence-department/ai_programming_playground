@@ -52,6 +52,7 @@ void function(int number) {
     // Remark: this code can be optimized using decltype,
     // so there won't be code repetitions
 
+    bool is_written = false;
     if (number % 2 == 0) {
         double** matrix = matrixA();
 
@@ -69,8 +70,7 @@ void function(int number) {
         int* sums = sum(matrix, matrix_size);
 
         // Write and read from file
-        bool is_written = write_to_file(sums, matrix_size);
-        if (is_written) read_from_file_return_product();
+        is_written = write_to_file(sums, matrix_size);
 
         // clear memory
         for (int i = 0; i < matrix_size; i++) {
@@ -89,8 +89,7 @@ void function(int number) {
         int* sums = sum(matrix, matrix_size);
 
         // Write and read from file
-        bool is_written = write_to_file(sums, matrix_size);
-        if (is_written) read_from_file_return_product();
+        is_written = write_to_file(sums, matrix_size);
 
         // clear memory
         for (int i = 0; i < matrix_size; i++) {
@@ -98,6 +97,11 @@ void function(int number) {
         }
         delete[] matrix;
         delete[] sums;
+    }
+
+    if (is_written) {
+        read_from_file_return_product();
+        delete_file();
     }
 }
 
@@ -236,5 +240,7 @@ long long read_from_file_return_product() {
 
 [[maybe_unused]] bool delete_file() {
     // remove is a C-function
-    return remove(file.c_str()) == 0;
+    bool is_removed = remove(file.c_str()) == 0;
+    cout << (is_removed ? "File was removed" : "File wasn't removed");
+    return is_removed;
 }
