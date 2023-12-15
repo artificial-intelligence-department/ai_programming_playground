@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 
-const int PR = 822;
+const int PR = 823;
 const char FILE_NAME[] = "output.txt";
 
 
