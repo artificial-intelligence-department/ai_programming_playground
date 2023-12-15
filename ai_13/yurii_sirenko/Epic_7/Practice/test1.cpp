@@ -10,19 +10,23 @@ const char FILE_NAME[] = "output.txt";
 
 void generateMatrix(float matrix[10][10]) {
     const double e = 2.71828;
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10; j++) {
-            double x = i * 0.1 + j * 0.01;
-            matrix[i][j]=x*100;
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            int x = i * 0.1 + j * 0.01;
+            matrix[i][j] = cos(pow(x,2))*pow(e,-x);
         }
     }
 }
 void generateMatrix(int matrix[10][10]) {
     const double e = 2.71828;
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10; j++) {
-            double x = i * 0.1 + j * 0.01;
-            matrix[i][j] = x*100;
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            int x = i * 0.1 + j * 0.01;
+            matrix[i][j] = cos(pow(x,2))*pow(e,-x);
         }
     }
 }
