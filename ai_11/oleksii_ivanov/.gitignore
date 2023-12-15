@@ -25,3 +25,6 @@ Thumbs.db
 
 # Miscellaneous files
 *.exe
+
+# CMake files
+CMakeLists.txt

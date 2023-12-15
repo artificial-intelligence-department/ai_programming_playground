@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" modified="2023-10-29T19:55:17.165Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.76" etag="iLHyqNOQlhltGZdPU0XM" version="22.0.8" type="google">
+  <diagram name="Page-1" id="xlrHoB1tgVw3jY1EKKIN">
+    <mxGraphModel dx="664" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-46" value="finish" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="1000" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FWgb_xnWVuBFIPJYUIIz-47" target="FWgb_xnWVuBFIPJYUIIz-48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-47" value="start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FWgb_xnWVuBFIPJYUIIz-48" target="FWgb_xnWVuBFIPJYUIIz-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-48" value="get size of the road" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FWgb_xnWVuBFIPJYUIIz-51" target="FWgb_xnWVuBFIPJYUIIz-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-51" value="Create an array to store the road:" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FWgb_xnWVuBFIPJYUIIz-55" target="HnbWSTlcL0RK44amXA5t-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-55" value="Sort the road" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FWgb_xnWVuBFIPJYUIIz-56" target="FWgb_xnWVuBFIPJYUIIz-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWgb_xnWVuBFIPJYUIIz-56" value="Read the road into the array" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HnbWSTlcL0RK44amXA5t-3" target="HnbWSTlcL0RK44amXA5t-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-7" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HnbWSTlcL0RK44amXA5t-6">
+          <mxGeometry x="-0.3544" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-3" value="road size &amp;gt; 2?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="790" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HnbWSTlcL0RK44amXA5t-5" target="HnbWSTlcL0RK44amXA5t-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-10" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HnbWSTlcL0RK44amXA5t-9">
+          <mxGeometry x="0.0598" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-14" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HnbWSTlcL0RK44amXA5t-9">
+          <mxGeometry x="0.1143" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HnbWSTlcL0RK44amXA5t-5" target="HnbWSTlcL0RK44amXA5t-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-13" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HnbWSTlcL0RK44amXA5t-12">
+          <mxGeometry x="-0.1434" y="-2" relative="1" as="geometry">
+            <mxPoint x="-2" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-5" value="last - second &amp;lt; first - second?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="790" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-8" value="Output the difference between the last and second elements" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="810" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HnbWSTlcL0RK44amXA5t-11" value="Output the difference between the first and second elements" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="610" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
