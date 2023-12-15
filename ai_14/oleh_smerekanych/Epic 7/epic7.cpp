@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 
-const int PR_NUMBER = 70; 
+const int PR_NUMBER = 1029; 
 const std::string FILE_NAME = "output.txt";
 
 std::vector<std::vector<float>> generateMatrix() {
