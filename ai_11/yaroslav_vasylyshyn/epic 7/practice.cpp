@@ -21,12 +21,13 @@ void creationint(int a[10][10]){
     {
         for (int j = 0; j < 10; j++)
         {
+            //математичні операції
             a[i][j] = pow(i, 2) + pow(j, 2);
         }
     }
 }
 
-
+//перевантаження фунції параметри та аргументи
 void perevantazh(float a[10][10], const int variant){
     for (int j = 0; j < 10; ++j){
         for (int i = 0; i < 10 - 1; ++i){
@@ -61,10 +62,13 @@ void show(float a[10][10]){
 }
 
 int* calculateSums(float a[10][10]) {
-    int* sums = new int[10];
+    int* sums = new int[10];//одновимірний масив
     srand(time(nullptr));
     for (int j = 0; j < 10; ++j) {
+        //одна цілочисельна змінна дійсна змінна  з подвійною точністю
         int sum = 0;
+        double a;
+        float a;
         for (int count = 0; count < 4; ++count) {
             int randomRow = rand() % 10;
             sum += static_cast<int>(a[randomRow][j]);
@@ -80,7 +84,7 @@ void showSums(int* sums) {
     }
     cout << '\n';
 }
-
+//функції роботи з файлами
 bool write(string& name_of_the_file, int* a){
     ofstream file_stream1(name_of_the_file, ios::out);
     if (file_stream1.is_open()) 
@@ -95,14 +99,14 @@ bool write(string& name_of_the_file, int* a){
         cout << "Error while opening" << endl;
         return false;
 }
-
+//для того щоб зчитати
 int read(string& name_of_the_file, int* a){
     ifstream file_stream2(name_of_the_file);
     if (file_stream2.is_open()) 
     {
         int product = 1;
         int value;
-
+            //while loop
         while (file_stream2 >> value){
             product *= value;
         }
@@ -115,7 +119,7 @@ int read(string& name_of_the_file, int* a){
 }
 
 void show(int a[10][10]){
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++)// for циул
     {
         for (int j = 0; j < 10; j++)
         {
@@ -125,6 +129,7 @@ void show(int a[10][10]){
     }
 }
 void deleteFile(string name_of_the_file){
+    //умовний оператор
     if (remove(name_of_the_file.c_str()) == 0) {
         cout << "File deleted successfully." << endl;
     } else {
@@ -133,8 +138,9 @@ void deleteFile(string name_of_the_file){
 }
 
 int main(){
+    //цілочисельна константа
     const int a = 944;
-    float myMatrixFloat[10][10];
+    float myMatrixFloat[10][10];//двовимірний
     int myMatrixInt[10][10];
 
     creation(myMatrixFloat);
@@ -153,8 +159,12 @@ int main(){
     string file_name = "practice.txt";
     write(file_name, sum);
     int sum1 = read(file_name, sum);
+    //вивід
     cout<<'\n';
-    
+    //do while loop
+    do{
+        cout<<"Bye";
+    }while(a>1000);
     deleteFile(file_name);
 
     return 0;
