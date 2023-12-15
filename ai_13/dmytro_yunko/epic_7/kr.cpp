@@ -23,12 +23,15 @@ float** createFloatMatrix()
 void sortColumns(float** matrix, float PRN){
     for (int i = 0; i < 10; i++)
     {
-        for (int j = 0; j < 9; j++){
+        for (int k = 0; k < 10; k++){
+           for (int j = 0; j < 9-k; j++){
             if (matrix[j][i] > matrix[j + 1][i]){
 
                 swap(matrix[j][i], matrix[j + 1][i]);
             }
         }
+        
+    }
     }
 }
 //функція яка виводить матрицю на екран
@@ -69,7 +72,7 @@ bool writeToFile(int* ar){
         cout << "Error writing file" << endl;
         return false;
     }
-        cout<< "hello";
+       
        for (size_t i = 0; i < 10; i++)
        {
             file << ar[i]<< " ";
@@ -94,7 +97,7 @@ int calculateProductFromFile() {
     return 0;
 }
 void deleteFile() {
-    if (std::remove("output.txt") == 0) {
+    if (std::remove("out.txt") == 0) {
         std::cout << "File deleted successfully." << std::endl;
     } else {
         std::cout << "Failed to delete the file." << std::endl;
@@ -114,13 +117,14 @@ int main(int argc, char const *argv[])
     printMatrix(matrix);
     int* sums = createSumMatrix(matrix);
 
-    cout<< "========";
+    cout<< "========"<<endl;
     for (size_t i = 0; i < 10; i++)
     {
         cout<<sums[i]<<" ";
     }
     writeToFile(sums);
-    calculateProductFromFile();
+     cout<< "========"<<endl;
+    cout<<calculateProductFromFile();
     deleteFile();
     return 0;
 }
