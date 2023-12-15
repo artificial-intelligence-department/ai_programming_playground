@@ -81,7 +81,7 @@ bool writeToFile(int* ar){
     
 }
 int calculateProductFromFile() {
-    std::ifstream file("output.txt");
+    ifstream file("out.txt");
     if (file.is_open()) {
         int product = 1;
         int value;
