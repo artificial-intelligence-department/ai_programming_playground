@@ -22,14 +22,14 @@ void trapSquare (double &a, double &b, double &h)//функція для пош�
     cout<<"Square of the trapeze is "<<S<<" cm";
 }
 
-void trapVolume (double &R, double &hc)//функція для пошуку об'єму циліндру
+void cylVolume (double &R, double &hc)//функція для пошуку об'єму циліндру
 {
-    cout<<"\nEnter a radius of a trapeze:\n";
+    cout<<"\nEnter a radius of a cylinder:\n";
     cin>>R;
-    cout<<"Enter a hight of a trapeze:\n";
+    cout<<"Enter a hight of a cylinder:\n";
     cin>>hc;
 
-    double V = 2*M_PI*R*hc;//формула для пошуку об'єму. M_PI позначає число пі, яке знахоидть в бібліотеці cmath
+    double V = M_PI*pow(R,2)*hc;//формула для пошуку об'єму. M_PI позначає число пі, яке знахоидть в бібліотеці cmath
     cout<<"Volume of the cylinder is "<<V<<" cubic cm";
 }
 
@@ -54,7 +54,7 @@ int main()
 
         case 3://якщо ввели цифру 3
         double R, hc;
-        trapVolume (R, hc);
+        cylVolume (R, hc);
         break;
     }
 
