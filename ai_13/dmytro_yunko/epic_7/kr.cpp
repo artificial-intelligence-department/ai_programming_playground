@@ -80,7 +80,26 @@ bool writeToFile(int* ar){
     
     
 }
-
+int calculateProductFromFile() {
+    std::ifstream file("output.txt");
+    if (file.is_open()) {
+        int product = 1;
+        int value;
+        while (file >> value) {
+            product *= value;
+        }
+        file.close();
+        return product;
+    }
+    return 0;
+}
+void deleteFile() {
+    if (std::remove("output.txt") == 0) {
+        std::cout << "File deleted successfully." << std::endl;
+    } else {
+        std::cout << "Failed to delete the file." << std::endl;
+    }
+}
 
 
 
@@ -101,7 +120,8 @@ int main(int argc, char const *argv[])
         cout<<sums[i]<<" ";
     }
     writeToFile(sums);
-    
+    calculateProductFromFile();
+    deleteFile();
     return 0;
 }
 
