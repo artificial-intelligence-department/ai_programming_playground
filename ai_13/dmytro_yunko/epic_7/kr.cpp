@@ -62,19 +62,22 @@ int* createSumMatrix(float** matrix) {
     return sums;
 }
 //функція яка записує масив сум в файл
-writeToFile(int* ar){
-    ofstream file(out.txt);
-    if (fiel.is_open())
+bool writeToFile(int* ar){
+    ofstream file("out.txt");
+    if (!file)
     {
-       for (size_t i = 0; i < count; i++)
+        cout << "Error writing file" << endl;
+        return false;
+    }
+        cout<< "hello";
+       for (size_t i = 0; i < 10; i++)
        {
-            file << array[i]<< " ";
+            file << ar[i]<< " ";
        }
        file.close();
        return true;
        
-    }
-    return false;
+    
     
 }
 
@@ -97,6 +100,7 @@ int main(int argc, char const *argv[])
     {
         cout<<sums[i]<<" ";
     }
+    writeToFile(sums);
     
     return 0;
 }
