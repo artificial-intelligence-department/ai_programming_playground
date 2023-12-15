@@ -205,8 +205,11 @@ void deleteFile()
 }
 void printAr(int* a)
 {
-    for (int i = 0; i < m_size; i++)
+    int i = 0;
+    do // Вимога 8 - в коді використаний do while цикл
     {
         cout << a[i] << " ";
+        i++;
     }
+    while(i < m_size);
 }
