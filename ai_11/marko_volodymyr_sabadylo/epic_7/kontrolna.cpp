@@ -2,7 +2,8 @@
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
- using  namespace  std;
+using namespace std;
+
 const int CONSTANT = 979;
 const char FILENAME[] = "output.txt";
 
@@ -35,6 +36,7 @@ void SortMatrix(float matrix[10][10], float value) {
         }
     }
 }
+
 void SortMatrix(int matrix[10][10], int value) {
     // Bubble sort rows
     for (int i = 0; i < 10; i++) {
@@ -47,39 +49,38 @@ void SortMatrix(int matrix[10][10], int value) {
         }
     }
 }
-int*CalculateSums (int martix[10][10],float multiplier){
+
+int* CalculateSums(int matrix[10][10], float multiplier) {
     static int sums[10];
-    srand(static_cast<unsigned>(time(nullptr))) ;
+    srand(static_cast<unsigned>(time(nullptr)));
 
-    for (int j=0;j<0:j++){
-        int sum=0;
-        for  (int i=0;i<4:i++){
-
-            int randomindex=rand()%10;
-            sum+=matrix [randomindex][j];
+    for (int j = 0; j < 10; j++) {
+        int sum = 0;
+        for (int i = 0; i < 4; i++) {
+            int randomindex = rand() % 10;
+            sum += matrix[randomindex][j];
         }
 
-        sums [j]=static_cast<int>(sum*multiplier);
+        sums[j] = static_cast<int>(sum * multiplier);
     }
     return sums;
 }
-bool SaveSums(int sums [10]) {
-    ofstream file(FILENAME)  ;
-    if (file.is_open()) {
-        for (int i=0;i<10;i++){
-            file<<sums[i]<<" ";
 
+bool SaveSumsToFile(int sums[10]) {
+    ofstream file(FILENAME);
+    if (file.is_open()) {
+        for (int i = 0; i < 10; i++) {
+            file << sums[i] << " ";
         }
         file.close();
         return true;
     }
-    return false      ;
+    return false;
+}
 
-     }
-
-    int CalculateProductFromFile() {
+int CalculateProductFromFile() {
     int product = 1;
-    std::ifstream file(FILENAME);
+    ifstream file(FILENAME);
     if (file.is_open()) {
         int value;
         while (file >> value) {
@@ -94,7 +95,7 @@ void DeleteFile() {
     if (remove(FILENAME) == 0) {
         cout << "File deleted successfully.\n";
     } else {
-        scout << "Error deleting the file.\n";
+        cout << "Error deleting the file.\n";
     }
 }
 
@@ -104,7 +105,7 @@ int main() {
 
     GenerateMatrix(floatMatrix);
     SortMatrix(floatMatrix, 1.0);
-    // You can choose a different multiplier for the integer matrix if needed.
+
     GenerateMatrix(intMatrix);
     SortMatrix(intMatrix, 1.0);
 
@@ -115,7 +116,7 @@ int main() {
     SaveSumsToFile(sumsInt);
 
     int product = CalculateProductFromFile();
-    :cout << "Product of sums from file: " << product << "\n";
+    cout << "Product of sums from file: " << product << "\n";
 
     DeleteFile();
 
