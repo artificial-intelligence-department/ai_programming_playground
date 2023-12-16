@@ -107,12 +107,12 @@ int main() {
     SortMatrix(floatMatrix, 1.0);
 
     GenerateMatrix(intMatrix);
-    SortMatrix(intMatrix, 1.0);
+    SortMatrix(intMatrix, 1);
 
-    int* sumsFloat = CalculateSums(intMatrix, 2.5);
+    int* sumsFloat = CalculateSums(floatMatrix, 2.5);
     SaveSumsToFile(sumsFloat);
 
-    int* sumsInt = CalculateSums(floatMatrix, 1);
+    int* sumsInt = CalculateSums(intMatrix, 1.0);
     SaveSumsToFile(sumsInt);
 
     int product = CalculateProductFromFile();
