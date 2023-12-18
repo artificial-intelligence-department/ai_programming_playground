@@ -6,7 +6,7 @@ using namespace std;
 // Функція для відновлення двовимірного масиву
 vector<vector<int>> f_array(const vector<int>& value_array, int rows, int cols) 
 {
-    // Створюємо порожній двовимірний масив
+    // Створюємо порожній двовимірний масив 
     vector<vector<int>> my_array(rows, vector<int>(cols, 0));
 
     // Заповнюємо масив елементами з одновимірного масиву
