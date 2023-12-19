@@ -21,9 +21,9 @@ double stadium_length(int length){
     return new_length;
 }
 
-void WriteToFile_left(double n, string surname, double word_length, double symbol_length){
+void WriteToFile_left(double n, string surname, double word_length, double symbol_length){ //в коді використано функції роботи з файлами, для того, щоб записати у файл
     ofstream oFile("banners.txt");
-    if(!oFile.is_open()){
+    if(!oFile.is_open()){ //в коді використані умовні оператори та розгалуження
         cout << "error1";
         return;
     }
@@ -42,7 +42,7 @@ void WriteToFile_left(double n, string surname, double word_length, double symbo
     oFile.close();
 }
 
-void WriteToFile_right(double n, string surname, double word_length, double symbol_length){
+void WriteToFile_right(double n, string surname, double word_length, double symbol_length){ //в коді використано функції роботи з файлами, для того, щоб зчитати з файлу
     ofstream oFile("banners2.txt");
     if(!oFile.is_open()){
         cout << "error1";
@@ -56,7 +56,7 @@ void WriteToFile_right(double n, string surname, double word_length, double symb
         oFile << surname[i];
     }
     int i = 1;
-    while(i < n){
+    while(i < n){ //в коді використаний while цикл
         oFile << surname;
         i++;
     }
@@ -84,7 +84,7 @@ void print(int left_s, int right_s, string line){
 
 }
 
-struct Stadium{
+struct Stadium{ //в коді використано свою структуру даних
     int group;
     int length;
     int width;
@@ -93,9 +93,9 @@ struct Stadium{
 int main(){
     Stadium Shelep = {14, 130, 100};
     string surname = "shelep";
-    int count = CalculateGolos(surname);
-    float symbol_length = count*0.8;
-    double word_length = symbol_length*surname.length();
+    int count = CalculateGolos(surname); //в коді використана як мінімум одна цілочисельна змінна
+    float symbol_length = count*0.8; //в коді використана як мінімум одна дійсна змінна
+    double word_length = symbol_length*surname.length(); //в коді використана як мінімум одна дійсний з подвійною точністю змінна
     double stad_length = stadium_length(Shelep.length);
     double n = stad_length / word_length;
     double center = centre(stad_length);
@@ -107,8 +107,8 @@ int main(){
     double right = center+1.5;
     int left_s = left/symbol_length;
     int right_s = right/symbol_length;
-    for(int i = left_s-1; i <= right_s-1; i++){
-        cout << line[i];
+    for(int i = left_s-1; i <= right_s-1; i++){ //в коді використаний for цикл 
+        cout << line[i]; //в коді використано оператори виведення та введення даних
     }
     return 0;
 }
