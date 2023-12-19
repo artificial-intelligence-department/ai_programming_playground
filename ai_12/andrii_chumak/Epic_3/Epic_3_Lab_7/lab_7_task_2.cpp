@@ -78,5 +78,5 @@ int main() {
     commonFraction2.display();
     cout << " = ";
     resultCommon.display();
-    cout << std::endl;
+    cout << endl;
 }
