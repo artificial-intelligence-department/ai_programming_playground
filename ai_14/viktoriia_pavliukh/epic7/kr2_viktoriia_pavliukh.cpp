@@ -45,5 +45,6 @@ int main(){
     for (int i = start_index; i < end_index; i++) {
         cout << syrname[i];
     }
+    
     return 0;
 }
