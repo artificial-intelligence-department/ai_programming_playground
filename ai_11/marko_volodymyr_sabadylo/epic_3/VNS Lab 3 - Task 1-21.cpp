@@ -35,14 +35,14 @@ int main() {
     int k = 10;
 
     for (double x = a; x <= b; x += (b - a) / k) {
-        // точне значення arctan(x)
+        // значення arctan(x)
         double exactValue = atan(x);
 
-        // а) для заданого n
+        //  для заданого n
         int n = 10; // можна змінювати
         double resultWithN = arctanTaylorSeries(x, n);
 
-        // б) для заданої точності ε
+        // для заданої точності ε
         double epsilon = 0.0001; // можна змінювати
         double resultWithAccuracy = arctanWithAccuracy(x, epsilon);
 

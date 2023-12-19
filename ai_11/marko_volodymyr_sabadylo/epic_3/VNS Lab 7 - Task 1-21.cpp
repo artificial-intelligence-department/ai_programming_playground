@@ -4,13 +4,13 @@
 
 using namespace std;
 
-// Функція для обчислення кутів трикутника за його сторонами
+//обчислення кутів трикутника за його сторонами
 double triangleAngle(double a, double b, double c) {
     double angleRad = acos((a * a + b * b - c * c) / (2 * a * b));
     return angleRad * 180 / M_PI; // Перетворення радіан в градуси
 }
 
-// Функція для обчислення кутів n-кутника за заданими сторонами
+//обчислення кутів n-кутника за заданими сторонами
 double angles(int sides, ...) {
     va_list args;
     va_start(args, sides);

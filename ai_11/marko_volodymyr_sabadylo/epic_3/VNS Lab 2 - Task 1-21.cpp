@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+using namespace std;
 // Функція для обчислення факторіалу
 double factorial(int n) {
     if (n == 0 || n == 1) {
@@ -19,7 +19,7 @@ int main() {
         sum += term;
     }
 
-    std::cout << sum << std::endl;
+    cout << sum <<endl;
 
     return 0;
 }

@@ -7,10 +7,10 @@ public:
     string title;
     string author;
 
-    // Конструктор для ініціалізації книги
+    // ініціалізація книги
     Book(const string& t, const string& a) : title(t), author(a) {}
 
-    // Перевантажений оператор виведення для виводу книги
+    // оператор виведення книги
     friend ostream& operator<<(ostream& os, const Book& book) {
         os << "Title: " << book.title << "\nAuthor: " << book.author << "\n";
         return os;
@@ -22,7 +22,7 @@ Book chooseBook(const vector<Book>& books, int index) {
     if (index >= 0 && index < books.size()) {
         return books[index];
     } else {
-        // Повертаємо порожню книгу у випадку невірного індексу
+        // Повертаємо порожню книгу у випадку не правильного індексу
         return Book("Invalid Book", "Invalid Author");
     }
 }
@@ -45,7 +45,7 @@ int main() {
     cout << "Enter the number of the book you want to choose: ";
     cin >> userChoice;
 
-    // Виводимо вибрану книгу
+    // Виведення книги
     Book selectedBook = chooseBook(bookList, userChoice - 1);
     cout << "\nYou have chosen:\n" << selectedBook;
 
