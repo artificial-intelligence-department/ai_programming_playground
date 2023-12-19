@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 #include <string>
+#include<fstream>
 
-int eyuoia(string& s) 
+int eyuoia(string& s)
 {
     int b = 0;
     for (char a : s) {
@@ -13,53 +14,38 @@ int eyuoia(string& s)
     return b;
 }
 
-int lght(string& s) 
+int lght(string& s) //в коді використано параметри та аргументи функції
 {
     int b = 0;
-    for (char a : s) 
+    for (char a : s)
     {
-        b++;  
+        b++;
     }
     return b;
 }
 
 int main()
 {
-    float dum = 0.0254;
-    double foot = 0.3048;
+    float dum = 0.0254;//в коді використана як мінімум одна дійсна змінна
+    double foot = 0.3048;//в коді використана як мінімум одна дійсний з подвійною точністю змінна
     double yard = 0.9144;
     string surname ;
     cin>>surname;
-    const int count = eyuoia(surname);
+    const int count = eyuoia(surname);//в коді використана як мінімум одна цілочисельна константа
     const int lenght =130;
     double letterlenght = 0.8*count;
-    int namelenght=lght(surname);
+    int namelenght=lght(surname);//в коді використана як мінімум одна цілочисельна змінна
     cout<<"Minimum lenght:"<<namelenght*letterlenght<<endl;
-    double centre = (130*yard);
+    double centre = (130*yard)/2;
+    double left = centre -1.5;
+    double right = centre +1.5;
+    string alotsurnames;
 
 
-    int startIndexLeftToRight = (lght(surname) - 1) / 2;
-    int startIndexRightToLeft = lght(surname) - startIndexLeftToRight - 1;
+    // for(int i =0;i<130*yard;i+=2.4) //не вистачило часу продумати як саме маю вираховувати чи є букви в центральних 3-ох метрах
+    // {
 
-    cout << "Characters within the central three meters (left to right): ";
-    for (int i = startIndexLeftToRight; i < lght(surname) && i < startIndexLeftToRight + 3; ++i) {
-        cout << surname[i] << " ";
-    }
-    cout << endl;
-
-    cout << "Characters within the central three meters (right to left): ";
-    for (int i = startIndexRightToLeft; i >= 0 && i > startIndexRightToLeft - 3; --i) {
-        cout << surname[i] << " ";
-    }
-    cout << endl;
-
-
-
-
-
-
-
-
+    // }
 
 }
 
@@ -73,7 +59,7 @@ int main()
 
 // Використовуючи Ваше прізвище розрахувати найменшу довжину, яка необхідна для розміщення банера з Вашим прізвищем.
 //  За умови, що прізвище можна записати лише в 1 ряд, а ширина букви(разом з інтервалом між символами) = кількості голосних букв у Вашому прізвищі * 0.8 метра.
-// На основі обчислених розмірів букви визначити символи, які будуть знаходитись на 3-х центральних(по довжині) метрах поля. 
+// На основі обчислених розмірів букви визначити символи, які будуть знаходитись на 3-х центральних(по довжині) метрах поля.
 // Обчислення зробити для 2-х випадків:
 // 1) при написанні прізвища з лівого краю поля —>  до правого
 // 2) при написанні прізвища з правого краю поля <—  до лівого.
