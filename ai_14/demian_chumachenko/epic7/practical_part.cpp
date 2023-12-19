@@ -43,7 +43,7 @@ int main(){
         }
     }
 
-    letter_with = surname.length() * letter_with_coff;
+    letter_with = vowels * letter_with_coff;
 
     int amount_of_let = game_length_c / letter_with; 
 
@@ -51,7 +51,17 @@ int main(){
     double left = center - 3;
     double right = center + 3;
 
+    int lett = 0;
+    for(float i = 0; i < game_length_c; i += letter_with){
+        lett++;
+        if((i + letter_with) >= left && (i + letter_with) <= right || i >= left && i <= right || (i - letter_with) >= left && (i - letter_with) <= right){
+            cout << surname[lett%surname.length()] << " " << i << endl;
+        }
+    }
+    
+    cout << left << endl;
     cout << center << endl;
+    cout << right << endl;
 
     return 0;
 }
