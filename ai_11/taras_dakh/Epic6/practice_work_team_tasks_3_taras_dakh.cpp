@@ -7,13 +7,13 @@ struct Node {
     Node(int val) : data(val), next(nullptr) {}
 };
 
-Node* add(Node *n1, Node *n2) {
+Node* add(Node *n1, Node *n2) { //У циклі обчислюється сума та перенос, створюється новий вузол з розрядом суми, і цей вузол додається до кінця результату.
     Node *result = nullptr;
     Node *current = nullptr;
     int carry = 0;
 
     while (n1 || n2 || carry) {
-        int sum = (n1 ? n1->data : 0) + (n2 ? n2->data : 0) + carry;
+        int sum = (n1 ? n1->data : 0) + (n2 ? n2->data : 0) + carry; //використовується для переносу при додаванні розрядів.
         carry = sum / 10;
 
         Node *newNode = new Node(sum % 10);
