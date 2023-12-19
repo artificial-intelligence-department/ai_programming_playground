@@ -10,8 +10,8 @@ float letter_length;
 
 float YardsToMeters (int yard);
 int countVowels(string str, int index, int counter);
-char* findIntersection(string surname, float length, float letter_length);
-char* findIntersection(string surname, float length);
+char* findIntersectionL(string surname, float length, float letter_length);
+char* findIntersectionR(string surname, float length);
 
 struct Length // Вимога 19.	в коді використано свою структуру даних
 {
@@ -37,10 +37,10 @@ int main()
     cout << "field.m = " << field.m << endl;
     
     cout << "1)" << endl;
-    char* resultLeft = findIntersection(surname, field.m, letter_length);
+    char* resultLeft = findIntersectionL(surname, field.m, letter_length);
     cout << resultLeft << endl;
     cout << "2)" << endl;
-    char* resultRight = findIntersection(surname, field.m);
+    char* resultRight = findIntersectionR(surname, field.m);
     cout << resultRight << endl;
 
 
@@ -72,7 +72,7 @@ int countVowels(string str, int index, int counter) // Вимога 14.	в ко�
 
     return countVowels(str, index + 1, counter); // Вимога 13.	в коді використано рекурсивну функцію 
 }
-char* findIntersection(string surname, float length, float letter_length)
+char* findIntersectionL(string surname, float length, float letter_length)
 {
     int counter = 0;
     double middle = (length - 3) / 2;
@@ -101,7 +101,7 @@ char* findIntersection(string surname, float length, float letter_length)
 
     return result;
 }
-char* findIntersection(string surname, float length)
+char* findIntersectionR(string surname, float length)
 {
     int counter = 0;
     double middle = (length - 3) / 2;
