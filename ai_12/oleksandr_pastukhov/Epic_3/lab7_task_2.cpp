@@ -28,10 +28,10 @@ int findMin(std::string text){
 int main(){
     using namespace std;
     string text = "ad bad ddra dfa d";
-    vector<int> numb = {1,2,3,4,5,6,1};
+    vector<int> numb = {12,2,3,4,5,6,13};
 
-    cout << findMin(text);
-    cout << findMin(numb);
+    cout << findMin(text) << endl;
+    cout << findMin(numb) << endl;
 
     return 0;
 }

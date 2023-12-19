@@ -33,9 +33,9 @@ int main(){
 
     double CircleRadius = 10;
 
-    cout << HowManyOfThemInCircle(CircleRadius, 3, 7, 1, 2, 4.5, 3.4, 10);
-    cout << HowManyOfThemInCircle(CircleRadius, 9, 1, 2, 3, 4, 5.2, 6, 7.1, 8, 9);
-    cout << HowManyOfThemInCircle(CircleRadius, 11, 1.2, 2.3, 3.1, 4.7, 5.3, 6.6, 7.1, 8, 9.9, 10, 1);
+    cout << HowManyOfThemInCircle(CircleRadius, 3, 7, 1, 2, 4.5, 3.4, 10) << endl;
+    cout << HowManyOfThemInCircle(CircleRadius, 9, 1, 2, 3, 4, 5.2, 6, 7.1, 8, 9) << endl;
+    cout << HowManyOfThemInCircle(CircleRadius, 11, 1.2, 2.3, 3.1, 4.7, 5.3, 6.6, 7.1, 8, 9.9, 10, 1) << endl;
     
-    return 1;
+    return 0;
 }
