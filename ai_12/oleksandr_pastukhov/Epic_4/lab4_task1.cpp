@@ -4,7 +4,7 @@ void arrayOutput(int arr[],int start,int end){
     std::cout << "Масив від " << start << " до " << end << ": ";
     for(int i = start;i <= end;i++)
         std::cout << arr[i] << " ";
-    
+
     std::cout << std::endl;
 }
 
@@ -19,7 +19,7 @@ int main(){
         cout << StartArr[i] << " ";
     } 
     cout << endl;
-    
+
     int k = 3;
     arrayOutput(StartArr,k,k+1);
 

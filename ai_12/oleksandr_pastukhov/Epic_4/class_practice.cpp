@@ -19,7 +19,8 @@ int main(){
     cout << "Enter word to detect palindrome: " << endl;
     cin >> WordToCheck;
 
-    IsPalindrome(WordToCheck,0,WordToCheck.size() - 1);
+    string answer = (IsPalindrome(WordToCheck,0,WordToCheck.size() - 1)) ? "true" : "false";
+    cout << answer;
 
     return 0;
 }

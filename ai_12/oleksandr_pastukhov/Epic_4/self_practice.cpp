@@ -20,14 +20,30 @@ void countElements(const std::vector<int> array1,const std::vector<int> array2){
         if (std::find(uniqueElements.begin(),uniqueElements.end(),element) == uniqueElements.end()) 
             uniqueElements.push_back(element); 
 
-    std::cout << "Кількість спільних елементів: " << commonCount << std::endl;
-    std::cout << "Кількість унікальних елементів в обох масивах разом: " << uniqueElements.size() << std::endl;
+    std::cout << commonCount << std::endl;
+    std::cout << uniqueElements.size() << std::endl;
 }
 
 int main(){
     using namespace std;
-    vector<int> array1 = {1, 2, 3, 4, 5};
-    vector<int> array2 = {3, 4, 5, 6, 7};
+    
+    int n;
+    cin >> n;
+    vector<int> array1;
+    for (int i = 0;i < n;i++){
+        int element;
+        cin >> element;
+        array1.push_back(element);
+    }
+
+    int m;
+    cin >> m;
+    vector<int> array2;
+    for (int i = 0;i < m;i++) {
+        int element;
+        cin >> element;
+        array2.push_back(element);
+    }
 
     countElements(array1, array2);
 
