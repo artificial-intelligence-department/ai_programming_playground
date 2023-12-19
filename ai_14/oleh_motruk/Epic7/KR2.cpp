@@ -7,7 +7,7 @@ using namespace std;
 
 bool Vowel(char c){
     c = tolower(c);
-    return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' , c == 'y');//check if the letter is a vowel
+    return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y');//check if the letter is a vowel
 }
 
 int countVowels(string surname , int count , int i = 0){//count vowels in surname
@@ -91,7 +91,9 @@ int main(){
     const int width_of_field = 100;//int const
     const int length_of_field = 130;
 
-    string surname = "Motruk";
+    string surname;
+    cout << "Enter your surname: ";
+    cin >> surname;
 
     string reverse_surname = reverse(surname);
 
