@@ -123,7 +123,7 @@ char* findIntersection(string surname, float length)
     do // Вимога 8.	в коді використаний do while цикл
     {
         index = (index + 1) % surname.length();
-        result[surname.length() - i] = surname[index];
+        result[i] = surname[surname.length() - index];
         i++;
     } while (i < counter); 
     result[i] = '\0';
