@@ -6,10 +6,12 @@ using namespace std;
 
 const int length_yard = 110; // Вимога 4.	в коді використана як мінімум одна цілочисельна константа
 const char vowels[] = {'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'};
+float letter_length;
 
 float YardsToMeters (int yard);
 int countVowels(string str, int index, int counter);
 char* findIntersection(string surname, float length, float letter_length);
+char* findIntersection(string surname, float length);
 
 struct Length // Вимога 19.	в коді використано свою структуру даних
 {
@@ -37,6 +39,9 @@ int main()
     cout << "1)" << endl;
     char* resultLeft = findIntersection(surname, field.m, letter_length);
     cout << resultLeft << endl;
+    cout << "2)" << endl;
+    char* resultRight = findIntersection(surname, field.m);
+    cout << resultRight << endl;
 
 
     return 0;
@@ -92,7 +97,36 @@ char* findIntersection(string surname, float length, float letter_length)
         result[i] = surname[index];
         i++;
     } while (i < counter); 
-    result[i + 1] = '\0';
+    result[i] = '\0';
+
+    return result;
+}
+char* findIntersection(string surname, float length)
+{
+    int counter = 0;
+    double middle = (length - 3) / 2;
+    int index = int(middle / letter_length);
+    double temp = letter_length * round(middle / letter_length);
+    
+    while (temp < middle + 3) // Вимога 9.	в коді використаний while цикл
+    {
+        temp += letter_length;
+        counter++;
+    }
+    if(counter == 0)
+    {
+        return NULL;
+    }
+
+    char* result = new char[counter + 1]; // Вимога 6.	в коді використаний одновимірний масив.  Вимога 20.	в коді використано вказівники
+    int i = 0; // Вимога 1.	в коді використана як мінімум одна цілочисельна змінна
+    do // Вимога 8.	в коді використаний do while цикл
+    {
+        index = (index + 1) % surname.length();
+        result[surname.length() - i] = surname[index];
+        i++;
+    } while (i < counter); 
+    result[i] = '\0';
 
     return result;
 }
