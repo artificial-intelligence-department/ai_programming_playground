@@ -52,7 +52,7 @@ void WriteToFile_right(double n, string surname, double word_length, double symb
     double r = n - number;
     double l = r*word_length;
     int new_n = l / symbol_length;
-    for(int i = 0; i < new_n; i++){
+    for(int i = surname.length()-new_n-1; i < surname.length(); i++){
         oFile << surname[i];
     }
     int i = 1;
@@ -80,8 +80,15 @@ string ReadFromFile(){
     return line;
 }
 
-void print(int left_s, int right_s, string line){
-
+string ReadFromFile_right(){
+    ifstream iFile("banners2.txt");
+    if(!iFile.is_open()){
+        cout << "error";
+    }
+    string line;
+    getline(iFile, line);
+    iFile.close();
+    return line;
 }
 
 struct Stadium{ //в коді використано свою структуру даних
@@ -100,7 +107,9 @@ int main(){
     double n = stad_length / word_length;
     double center = centre(stad_length);
     WriteToFile_left(n, surname, word_length, symbol_length);
+    WriteToFile_right(n, surname, word_length, symbol_length);
     string line = ReadFromFile();
+    string line2 = ReadFromFile_right();
     cout << line;
     cout << endl;
     double left = center-1.5;
@@ -109,6 +118,10 @@ int main(){
     int right_s = right/symbol_length;
     for(int i = left_s-1; i <= right_s-1; i++){ //в коді використаний for цикл 
         cout << line[i]; //в коді використано оператори виведення та введення даних
+    }
+    cout << endl << line2 << endl;
+    for(int i = left_s-1; i <= right_s-1; i++){ //в коді використаний for цикл 
+        cout << line2[i]; //в коді використано оператори виведення та введення даних
     }
     return 0;
 }
