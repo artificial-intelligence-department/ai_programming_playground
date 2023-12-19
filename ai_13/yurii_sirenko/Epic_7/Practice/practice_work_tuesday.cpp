@@ -8,7 +8,7 @@ int countVowels(string str)
     for (int i = 0; str[i] != '\0'; ++i) 
     {
         char ch = std::tolower(str[i]);  // Convert to lowercase for case-insensitivity
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'y') 
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'y') //5 в коді використані умовні оператори та розгалуження
         {
             count++;
         }
@@ -19,19 +19,19 @@ int countVowels(string str)
 
 int main() 
 {
-    const double lenghtPole = 109.728;
+    const double lenghtPole = 109.728; //4 в коді використана як мінімум одна цілочисельна константа 
 
     string myLastName;
     cin>>myLastName;
     const int vowelsCount = countVowels(myLastName);
-    const double widthPerVowel = 0.8;
+    const double widthPerVowel = 0.8; //3 в коді використана як мінімум одна дійсний з подвійною точністю змінна
 
     int nameLength = 0;
     for (int i = 0; myLastName[i] != '\0'; ++i) {
         nameLength++;
     }
 
-    double letterWidth = vowelsCount * widthPerVowel;
+    double letterWidth = vowelsCount * widthPerVowel; //2 в коді використана як мінімум одна дійсна змінна
     double bannerLength = nameLength * (letterWidth);
 
 
@@ -54,14 +54,15 @@ int main()
     // Виводимо символи на 3-х центральних метрах
     std::cout << "middle symbols ";
 
-    int j = 0;
+    int j = 0; // 1 в коді використана як мінімум одна цілочисельна змінна
     for(double i = 0;i<lenghtPole;j++,i+=letterWidth)
     {
-        if(i>middleIndex-1.5&&i<middleIndex+1.5)
+        if(i>middleIndex-1.5&&i<middleIndex+1.5+letterWidth)
         {
             cout<<pole[j];
         }
     }
+
 
     return 0;
 }
