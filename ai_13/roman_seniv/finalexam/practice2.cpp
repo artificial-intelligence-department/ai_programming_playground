@@ -12,7 +12,7 @@ double calculateSize(const string& surname) {
             count++;
         }
     }
-    return count * 0.8;
+    return count * 0.8; // вказівник 
 }
 
 int main() {
@@ -27,7 +27,7 @@ int main() {
     int minBannerLength = max(minLengh, static_cast<int>(ceil(letterSize)));
     int centralChars = minBannerLength / 2;
 
-    cout << "Writing from left to right:" << endl;
+    cout << "Writing from left to right:" << endl; // вивід
 
     int i = 0;
     do {
@@ -36,7 +36,7 @@ int main() {
     } while (i < centralChars);
     cout << surname << endl;
 
-    cout << "Writing from right to left:" << endl;
+    cout << "Writing from right to left:" << endl; вивід
 
     i = 0;
     do {                   //використовую цикл do while 
