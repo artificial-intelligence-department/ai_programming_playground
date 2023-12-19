@@ -28,7 +28,7 @@ FileOpResult copy_file(const string& file_from, const string& file_to) {
         return Failure;
     }
 
-    destination << source.rdbuf();
+    destination << source.rdbuf();//отримує вміст source для передачі в destination
     source.close();
     destination.close();
 

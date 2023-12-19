@@ -10,6 +10,7 @@ struct Videotape {
     int price;
 };
 
+//вивід інф про відеокасету
 void printVideotape(const Videotape& tape) {
     cout << "Title: " << tape.title << endl;
     cout << "Director: " << tape.director << endl;
