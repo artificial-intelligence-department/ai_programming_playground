@@ -6,12 +6,11 @@ using namespace std;
 
 const int length_yard = 110; // Вимога 4.	в коді використана як мінімум одна цілочисельна константа
 const char vowels[] = {'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'};
-float letter_length;
 
 float YardsToMeters (int yard);
 int countVowels(string str, int index, int counter);
-char* findIntersectionL(string surname, float length, float letter_length);
-char* findIntersectionR(string surname, float length);
+char* findIntersectionL(string surname, float length, double letter_length);
+char* findIntersectionR(string surname, float length, double letter_length);
 
 struct Length // Вимога 19.	в коді використано свою структуру даних
 {
@@ -40,7 +39,7 @@ int main()
     char* resultLeft = findIntersectionL(surname, field.m, letter_length);
     cout << resultLeft << endl;
     cout << "2)" << endl;
-    char* resultRight = findIntersectionR(surname, field.m);
+    char* resultRight = findIntersectionR(surname, field.m, letter_length);
     cout << resultRight << endl;
 
 
@@ -72,7 +71,7 @@ int countVowels(string str, int index, int counter) // Вимога 14.	в ко�
 
     return countVowels(str, index + 1, counter); // Вимога 13.	в коді використано рекурсивну функцію 
 }
-char* findIntersectionL(string surname, float length, float letter_length)
+char* findIntersectionL(string surname, float length, double letter_length)
 {
     int counter = 0;
     double middle = (length - 3) / 2;
@@ -101,7 +100,7 @@ char* findIntersectionL(string surname, float length, float letter_length)
 
     return result;
 }
-char* findIntersectionR(string surname, float length)
+char* findIntersectionR(string surname, float length, double letter_length)
 {
     int counter = 0;
     double middle = (length - 3) / 2;
@@ -123,7 +122,7 @@ char* findIntersectionR(string surname, float length)
     do // Вимога 8.	в коді використаний do while цикл
     {
         index = (index + 1) % surname.length();
-        result[i] = surname[surname.length() - index];
+        result[i] = surname[surname.length() - 1 - index];
         i++;
     } while (i < counter); 
     result[i] = '\0';
