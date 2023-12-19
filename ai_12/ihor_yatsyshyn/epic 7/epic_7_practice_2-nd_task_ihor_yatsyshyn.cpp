@@ -38,7 +38,7 @@ int main()
     int letters_start = (length_meters / 2 - 1.5) * letters_per_meter;
     int letters_end = (length_meters / 2 + 1.5) * letters_per_meter;
     //Вимога 18 - в коді використано оператори виведення та введення даних (cout для виведення результату)
-    cout << "Letters in 3 center meters (left to right): " << result_banners.substr(letters_start, letters_end - letters_start) << endl;
+    cout << "Letters in 3 center meters (left to right): " << result_banners.substr(letters_start, letters_end - letters_start + 1) << endl;
     
     cout << "RIGHT TO LEFT" << endl;
 
@@ -54,7 +54,7 @@ int main()
     int letters_start_2 = (length_meters / 2 - 1.5) * letters_per_meter_2;
     int letters_end_2 = (length_meters / 2 + 1.5) * letters_per_meter_2;
 
-    cout << "Letters in 3 center meters (right to left): " << result_banners_2.substr(letters_start_2, letters_end_2 - letters_start_2) << endl;
+    cout << "Letters in 3 center meters (right to left): " << result_banners_2.substr(letters_start_2, letters_end_2 - letters_start_2 + 1) << endl;
 
     return 0;
 }
