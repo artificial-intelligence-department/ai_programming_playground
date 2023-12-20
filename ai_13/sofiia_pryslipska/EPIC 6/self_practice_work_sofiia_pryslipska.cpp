@@ -44,7 +44,7 @@ public:
         delete temp;
     }
 
-    // Повернення верхнього елемента стеку (без видалення)
+    // вивід верхнього елемента стеку (без видалення)
     void peek() {
         if (isEmpty()) {
             cout << "stack is empty." << endl;
@@ -53,12 +53,7 @@ public:
         cout << "the top of the stack: " << top->data << endl;
     }
 
-    // Деструктор для звільнення пам'яті, використаної для стеку
-    ~Stack() {
-        while (!isEmpty()) {
-            pop();
-        }
-    }
+    
 };
 
 int main() {

@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
-
+//додаємо
 struct Node {
     int data;
     Node* next;
     Node(int value) : data(value), next(nullptr) {}
 };
 
-Node* add(Node* n1, Node* n2) {
-    Node* result = nullptr;
+Node* add(Node* n1, Node* n2) { //вказівники на поч списків
+    Node* result = nullptr;//список, що містить суму двох чисел 
     Node* current = nullptr;
-    int carry = 0;
+    
 
-    while (n1 != nullptr || n2 != nullptr || carry != 0) {
-        int sum = carry;
+    while (n1 != nullptr || n2 != nullptr  ) {
+        int sum=0;
         if (n1 != nullptr) {
             sum += n1->data;
             n1 = n1->next;
@@ -23,8 +23,6 @@ Node* add(Node* n1, Node* n2) {
             n2 = n2->next;
         }
 
-        carry = sum / 10; // Отримуємо розряд для переносу
-        sum = sum % 10;   // Отримуємо поточний розряд для нового вузла
 
         if (result == nullptr) {
             result = new Node(sum);
@@ -47,13 +45,13 @@ void printList(Node* head) {
 }
 
 int main() {
-    Node* num1 = new Node(9);
-    num1->next = new Node(7);
+    Node* num1 = new Node(1);
+    num1->next = new Node(2);
     num1->next->next = new Node(3);
 
-    Node* num2 = new Node(6);
-    num2->next = new Node(8);
-    num2->next->next = new Node(2);
+    Node* num2 = new Node(4);
+    num2->next = new Node(5);
+    num2->next->next = new Node(6);
 
     cout << "number 1: ";
     printList(num1);
@@ -84,6 +82,14 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
 
 
 
