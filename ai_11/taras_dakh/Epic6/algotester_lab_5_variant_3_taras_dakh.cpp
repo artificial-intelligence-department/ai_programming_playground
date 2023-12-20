@@ -3,11 +3,11 @@
 
 using namespace std;
 
-int computeCellValue(int size_n, int size_m, int x, int y, int i, int j) {
+int computeCellValue(int size_n, int size_m, int x, int y, int i, int j) { //повертає значення для кожної клітини у векторі map на основі введених параметрів та розмірів
     int xmax = (x <= size_n / 2) ? 1 : size_n;
     int ymax = (y <= size_m / 2) ? 1 : size_m;
 
-    int max_value = (size_n - 1) + (size_m - 1) - (abs(x - xmax) + abs(y - ymax));
+    int max_value = (size_n - 1) + (size_m - 1) - (abs(x - xmax) + abs(y - ymax)); //максимальне можливе значення для клітини в залежності від розмірів  та відстані 
 
     return max_value - (abs(x - (i + 1)) + abs(y - (j + 1)));
 }
@@ -30,7 +30,7 @@ int main() {
 
         for (int i = 0; i < size_n; i++) {
             for (int j = 0; j < size_m; j++) {
-                map[i][j] = computeCellValue(size_n, size_m, x, y, i, j);
+                map[i][j] = computeCellValue(size_n, size_m, x, y, i, j); // Кожній клітині вектору map призначається значення, яке обчислюється за допомогою функції computeCellValue з використанням поточних значень
             }
         }
 
@@ -38,9 +38,7 @@ int main() {
 
         char answer;
         cin >> answer;
-        if (answer != 'y') {
-            break;
-        }
+       
     }
 
     return 0;

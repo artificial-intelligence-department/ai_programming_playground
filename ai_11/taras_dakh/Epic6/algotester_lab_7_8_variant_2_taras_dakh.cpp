@@ -23,25 +23,25 @@ public:
         if (index < 0 || index > size)
             return;
 
-        if (size + count >= capacity) {
+        if (size + count >= capacity) { //У цьому умовному операторі перевіряється, чи потрібно збільшити розмір масиву для вміщення нових елементів.
             long int changedCapacity = capacity;
 
-            while (size + count >= changedCapacity) {
+            while (size + count >= changedCapacity) { //У цьому циклі розмір changedCapacity подвоюється, доки не буде забезпечено, що новий розмір масиву буде достатнім для вміщення поточного розміру та кількості нових елементів.
                 changedCapacity *= 2;
             }
             T* changedElements = new T[changedCapacity];
-            size += count;
+            size += count; //Розмір об'єкта CustomArray збільшується на кількість нових елементів
 
             for (int i = 0; i < size; ++i) {
-                changedElements[i] = elements[i];
+                changedElements[i] = elements[i]; //Копіюється вміст поточного масиву elements в новий масив changedElements
             }
 
             delete[] elements;
             elements = changedElements;
 
-            std::copy_backward(elements + index, elements + size - count, elements + size);
+            std::copy_backward(elements + index, elements + size - count, elements + size); //Здійснюється зсув елементів вправо, щоб звільнити місце для нових елементів в області вставки
             for (size_t i = 0; i < count; ++i) {
-                elements[index + i] = values[i];
+                elements[index + i] = values[i];//Копіюються нові значення з values в область вставки у масиві.
             }
 
             capacity = changedCapacity;
@@ -60,11 +60,11 @@ public:
     }
 
 
-    void erase(long int index, long int count) {
+    void erase(long int index, long int count) { //Ця функція призначена для видалення елементів із масиву.
 
         long int deleteCount = std::min(count, size - index);
         for (int i = index; i < size - deleteCount; ++i) {
-            elements[i] = elements[i + deleteCount];
+            elements[i] = elements[i + deleteCount];//Це здійснює зсув елементів вліво, викриваючи місце, яке потрібно видалити.
         }
 
         size -= deleteCount;
@@ -86,7 +86,7 @@ public:
         }
 
     }
-    T& operator[](long int index) {
+    T& operator[](long int index) { //повертає посилання на елемент масиву за вказаним індексом. Це дозволяє отримувати та змінювати значення елементів масиву за допомогою індексації.
         return elements[index];
     }
 };
@@ -102,12 +102,12 @@ int main() {
     while (Q--) {
         string command;
         cin >> command;
-        char action = command[0];
+        char action = command[0];//Зчитується рядок команди від користувача у вигляді стрічки (command), і витягується перший символ (дія) цієї команди в змінну action
 
         long int index, count;
         long int* values;
 
-        switch (action) {
+        switch (action) { //Починається конструкція switch, яка дозволяє обирати виконання різних блоків коду в залежності від значення action
             case 'i':
                 cin >> index >> count;
 
