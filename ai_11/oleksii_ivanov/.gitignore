@@ -1,0 +1,30 @@
+# Build files
+*.o
+*.obj
+*.a
+*.lib
+cmake-build-debug
+
+# Debug files
+*.dSYM
+*.pdb
+
+# Test files
+*.test
+*.spec
+
+# IDE files
+*.vscode
+.idea
+*.cproject
+*.cbp
+
+# Generated files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous files
+*.exe
+
+# CMake files
+CMakeLists.txt

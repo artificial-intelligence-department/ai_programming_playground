@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2023-11-27T17:21:28.187Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="VQNeBQUoMhA2MLUis_6_" version="22.1.2" type="device">
+  <diagram name="Сторінка-1" id="3B7qxSFPgjDVqPPBZIbu">
+    <mxGraphModel dx="601" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZdX41lFNn2Z9zvEfaPj-1" target="UZdX41lFNn2Z9zvEfaPj-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZdX41lFNn2Z9zvEfaPj-2" target="UZdX41lFNn2Z9zvEfaPj-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-2" value="float / double a=..., b=..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="210" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZdX41lFNn2Z9zvEfaPj-4" target="UZdX41lFNn2Z9zvEfaPj-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-4" value="calculation float / double c" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="290" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZdX41lFNn2Z9zvEfaPj-7" target="UZdX41lFNn2Z9zvEfaPj-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-7" value="c" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZdX41lFNn2Z9zvEfaPj-9" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

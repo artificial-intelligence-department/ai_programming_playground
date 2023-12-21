@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-11-10T07:34:30.348Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="qiu2DbL9ZVQQ4GLZ-Qqh" version="22.1.0" type="device">
+  <diagram name="Сторінка-1" id="nZc5sA2cTrUfa12h9Miy">
+    <mxGraphModel dx="646" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PTJzBB4c3wsSKYrAEiKh-2" target="PTJzBB4c3wsSKYrAEiKh-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-2" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;start&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="350" y="130" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PTJzBB4c3wsSKYrAEiKh-3" target="PTJzBB4c3wsSKYrAEiKh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-3" value="a, b, c, d, f, ans" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="210" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PTJzBB4c3wsSKYrAEiKh-6" target="PTJzBB4c3wsSKYrAEiKh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-6" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;   &lt;/span&gt;a = 1000&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; b = 0.001&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; c = (a-b)^2&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; d = a^2&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; e = 2ab&lt;br&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; f = b^2&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="270" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PTJzBB4c3wsSKYrAEiKh-8" target="PTJzBB4c3wsSKYrAEiKh-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-8" value="ans = (c-(d-e))/f" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="390" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PTJzBB4c3wsSKYrAEiKh-10" target="PTJzBB4c3wsSKYrAEiKh-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-10" value="printf (c, d, e, f, ans)" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="315" y="450" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PTJzBB4c3wsSKYrAEiKh-12" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;End&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="350" y="524.5" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
