@@ -28,13 +28,11 @@ void remove_even_words(char *s) {
 
 int main() {
     char s[256];
-
-    cout<<("Vvedit' ryadok (ne bil'she 255 symboliv): ");
     gets(s);
 
     remove_even_words(s);
 
-    cout<<("Zminenyj ryadok: %s\n", s);
+    cout<< s;
 
     return 0;
 }
