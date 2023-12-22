@@ -39,7 +39,7 @@ int main() {
         cout << endl;
     }
 
-    sort_columns(array, 3, 5);
+    sort_columns(array, 3, 4);
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 5; j++) {
