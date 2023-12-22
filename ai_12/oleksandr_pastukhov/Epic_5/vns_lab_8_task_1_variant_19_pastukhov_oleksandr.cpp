@@ -3,7 +3,6 @@
 #include <string>
 #include <cstring>
 
-using namespace std;
 
 struct Movie {
     char title[100];
@@ -18,10 +17,12 @@ void deleteLastTwoMovies(char* filename);
 void addMovieAfterTitle(char* filename, char* targetTitle, Movie& newMovie);
 
 int main() {
+    using namespace std;
+
     int n;
     cout << "How many movies do you want to enter? ";
     cin >> n;
-    cin.ignore(); // Clear the newline character from the input buffer
+    cin.ignore();
 
     writeMoviesToFile("movies.txt", n);
     readMoviesFromFile("movies.txt", n);
@@ -43,7 +44,7 @@ int main() {
     cout << "Revenue: $";
     cin >> newMovie.revenue;
 
-    cin.ignore(); // Clear the newline character from the input buffer
+    cin.ignore();
 
     addMovieAfterTitle("movies.txt", "Target Movie Title", newMovie);
     readMoviesFromFile("movies.txt", n);
@@ -67,7 +68,7 @@ void writeMoviesToFile(char* filename, int n) {
         cout << "Enter revenue: $";
         cin >> movies[i].revenue;
 
-        cin.ignore(); // Clear the newline character left in the buffer
+        cin.ignore(); 
     }
 
     ofstream outFile(filename, ios::out | ios::binary);
@@ -125,8 +126,8 @@ void deleteLastTwoMovies(char* filename) {
         totalMovies++;
     }
 
-    inFile.clear(); // Clear the end-of-file flag
-    inFile.seekg(0, ios::beg); // Reset file pointer to the beginning
+    inFile.clear();
+    inFile.seekg(0, ios::beg); 
 
     for (int i = 0; i < totalMovies - 2; i++) {
         inFile.read(reinterpret_cast<char*>(&currentMovie), sizeof(Movie));

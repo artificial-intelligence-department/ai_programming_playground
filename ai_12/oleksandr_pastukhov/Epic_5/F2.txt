@@ -1,0 +1,9 @@
+apple peach kiwi
+grape mango pear
+cherry apple plum
+banana grape orange
+kiwi cherry mango
+pear peach apple
+plum mango kiwi
+orange banana cherry
+mango pear grape
