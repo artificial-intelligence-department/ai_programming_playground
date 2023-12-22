@@ -1,1 +1,0 @@
-d "c:\Uni\ai_12\oleksandr_pastukhov\Epic_5\" ; if ($?) { g++ class_practice_task_2_pastukhov_oleksandr.cpp -o class_practice_task_2_pastukhov_oleksandr } ; if ($?) { .\class_practice_task_2_pastukhov_oleksandr }
