@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    srand(time(0)); 
+
     
     const int MAX_SIZE = 100; 
 

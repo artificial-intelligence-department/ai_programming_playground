@@ -20,7 +20,7 @@ int main() {
     double sum3 = calculateSum(12, 1.2, 2.3, 3.4, 4.5, 5.6, 6.7, 7.8, 8.9, 9.0, 10.1, 11.2, 12.3);
 
     std::cout << "Sum 1: " << sum1 << std::endl;
-    std::cout << "Sum 2: " << sum2 << std::endl;
+    std::cout << "Sum 2: " << sum2 << std::endl; 
     std::cout << "Sum 3: " << sum3 << std::endl;
 
     return 0;
