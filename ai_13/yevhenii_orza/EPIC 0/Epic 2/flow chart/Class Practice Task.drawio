@@ -1,0 +1,169 @@
+<mxfile host="Electron" modified="2023-11-09T19:11:52.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="ee2O2sMCS5zAb-AzR_gy" version="21.7.5" type="device">
+  <diagram name="Сторінка-1" id="XCKnYKveRRGO5j_Rnf85">
+    <mxGraphModel dx="3637" dy="7090" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="usyRFGKKIZvIZ4119fMo-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="usyRFGKKIZvIZ4119fMo-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-2" value="Ask what is weather now" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="165" width="160" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-4" target="usyRFGKKIZvIZ4119fMo-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-4" target="usyRFGKKIZvIZ4119fMo-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-4" value="If weather Sunny" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="347.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-6" target="usyRFGKKIZvIZ4119fMo-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-6" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;You don`t need jacket&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-8" target="usyRFGKKIZvIZ4119fMo-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-8" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;You realy need something warmer than skinny&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="70" y="440" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-15" target="usyRFGKKIZvIZ4119fMo-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-15" target="usyRFGKKIZvIZ4119fMo-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-15" value="If weather is: Sunny/cloudy" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="585" width="120" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-19" target="usyRFGKKIZvIZ4119fMo-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-19" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;You can go for a wolk, play football, basketball and ect. Feel free in choise&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="340" y="710" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-21" target="usyRFGKKIZvIZ4119fMo-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-21" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;Oh! you can play snowball, make a SnowMan, or sit home and drink hot chockolate&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="10" y="730" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-26" target="usyRFGKKIZvIZ4119fMo-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-26" target="usyRFGKKIZvIZ4119fMo-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-26" value="If weather is: &lt;br&gt;Sunowy" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="593" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-29" target="usyRFGKKIZvIZ4119fMo-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-29" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;You should stay home, dont good weather to go outside&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="860" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-33" target="usyRFGKKIZvIZ4119fMo-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-33" value="Case S" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="435" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-34" target="usyRFGKKIZvIZ4119fMo-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-34" value="Case &#39;C&#39; or &lt;br&gt;&#39;W&#39; or &#39;R&#39;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="668.22" y="603" width="83.57" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-37" target="usyRFGKKIZvIZ4119fMo-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-37" value="Case &lt;br&gt;&quot;default&quot;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-38" target="usyRFGKKIZvIZ4119fMo-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-38" target="usyRFGKKIZvIZ4119fMo-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="540" />
+              <mxPoint x="1030" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-38" value="If Snowy" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="435" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-40" target="usyRFGKKIZvIZ4119fMo-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-40" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;take realy warm boots&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="970" y="445" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1200" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-42" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;You need to wear flip-flops or same things:)&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="970" y="550" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1200" y="870" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="980" y="678" />
+              <mxPoint x="980" y="774" />
+              <mxPoint x="1200" y="774" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-44" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;Wear warm boots&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="813.5749999999999" y="618" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-46" target="usyRFGKKIZvIZ4119fMo-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-46" value="&lt;div style=&quot;color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;&quot;Error : go bearfood&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-49" target="usyRFGKKIZvIZ4119fMo-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-49" target="usyRFGKKIZvIZ4119fMo-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-49" target="usyRFGKKIZvIZ4119fMo-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-49" value="Switch&lt;br&gt;case" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="910" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="usyRFGKKIZvIZ4119fMo-57" target="usyRFGKKIZvIZ4119fMo-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-57" value="Print all answer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usyRFGKKIZvIZ4119fMo-62" value="END" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="990" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
