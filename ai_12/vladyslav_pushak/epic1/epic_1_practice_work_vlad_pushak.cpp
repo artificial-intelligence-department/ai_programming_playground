@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 
 int main() {
     char name[50];
@@ -19,7 +19,7 @@ int main() {
 
   compound_interest = principle *((1 + rate), time);
 
-    printf("%s, ваші складні відсотки становлять: %.2lf\n", name, compound_interest);
+   printf("%s, ваші складні відсотки становлять: %.2lf\n", name, compound_interest);
 
     return 0;
 }

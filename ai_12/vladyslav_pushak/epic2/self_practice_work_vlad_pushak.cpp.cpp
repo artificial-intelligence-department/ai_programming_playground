@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+#include <string>
+std::string myString = "Hello, World!";
+=======
 #include <iostream>
 
 using namespace std;
@@ -18,3 +22,4 @@ int main() {
 
     return 0;
 }
+>>>>>>> 77379904f290d63453765927e6c451a6bff78e22
