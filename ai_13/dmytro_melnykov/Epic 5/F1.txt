@@ -1,0 +1,231 @@
+У вас є шахова дошка розміром 8×8 та дуже багато фігур.
+Кожна клітинка може мати таке значення:
+Пуста клітинка O
+Пішак P
+Тура R
+Кінь N
+Слон B
+Король K
+Королева Q
+Вам дають позиції фігур на дошці (всі фігури одного кольору, кількість королів може бути > 1).
+Далі йдуть Q запитів з координатами клітинки 
+{x,y}. На кожен запит ви маєте вивести стрічку s
+i- посортовані за алфавітом букви фігур, які атакують цю клітинку (пішаки атакують вниз).
+У випадку, якщо на клітинці стоїть якась фігура - виведіть символ X.
+У випадку, якщо клітинку не атакують - виведіть O.
+Наявніть фігури у певній клітинці не блокує атаку для іншої фігури. Тобто якщо між турою та клітинкою стоїть інша фігура - вважається що тура атакує цю клітинку.
+Input
+У перших 8 рядках стрічка rowi - стан i-го рядка дошки.
+У наступному рядку ціле число Q - кількість записів
+У наступних Q рядках 2 цілих числа x та y - координати клітинки
+Output Q разів відповідь у наступному форматі:
+Строка result - усі фігури, які атакують клітинку з запиту.
+Constraints|rowi|=N
+rowi∈{O,P,R,N,B,K,Q}
+1≤Q≤64
+1≤x,y≤8
+приклади по яким має виконуватись умова
+Input (stdin)	
+KOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+5
+1 1
+1 2
+2 1
+2 2
+3 1
+Output (stdout)
+X
+K
+K
+K
+O
+Input (stdin)
+OOOOOOOO
+OQOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+
+13
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+4 4
+7 7
+1 7
+2 7
+Output (stdout)
+Q
+Q
+Q
+Q
+X
+Q
+Q
+Q
+Q
+Q
+Q
+O
+Q
+Input (stdin)
+OOOOOOOO
+OROOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOR
+
+6
+1 1
+1 2
+2 1
+8 1
+8 2
+7 1
+Output (stdout)
+O
+R
+R
+R
+R
+O
+Input (stdin)
+OOOOOOOO
+OBOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OBOOOOOO
+
+8
+1 1
+2 2
+1 3
+1 2
+6 1
+7 1
+1 7
+7 1
+Output (stdout)
+B
+X
+B
+O
+O
+B
+O
+B
+Input (stdin)
+OOOOOOOO
+ONOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOONOO
+OOOOOOOO
+OOOOOOOO
+
+6
+1 4
+3 4
+4 1
+4 2
+8 5
+8 7
+Output (stdout)
+N
+N
+N
+O
+N
+N
+Input (stdin)
+OOOOOOOO
+OROOOOOO
+OONOOOOO
+OOOOPOOO
+OOOOOOOO
+OOOOOOOO
+KOQOOOOO
+OOOOOOOR
+
+7
+8 1
+1 2
+5 4
+5 1
+6 2
+8 4
+6 7
+Output (stdout)
+KR
+NR
+NP
+Q
+KQR
+QR
+O
+Input (stdin)
+ROOOOPOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+4
+1 1
+1 5
+1 6
+1 8
+Output (stdout)
+X
+R
+X
+R
+Input (stdin)
+OOOOOOOO
+OPOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+
+6
+1 1
+1 3
+3 1
+3 3
+1 2
+3 2
+Output (stdout)
+O
+O
+P
+P
+O
+O
