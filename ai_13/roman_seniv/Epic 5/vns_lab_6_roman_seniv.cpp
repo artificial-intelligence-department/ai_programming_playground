@@ -6,18 +6,16 @@ using namespace std;
 int main() {
     string inputString;
     cout << "Enter a string: ";
-    getline(cin, inputString);
-
+    //getline(cin, inputString);
+    cin >> inputString;
     vector<char> result;
 
-    // Extract alphabetic characters
     for (char ch : inputString) {
         if (isalpha(ch)) {
             result.push_back(ch);
         }
     }
 
-    // Extract numeric characters
     for (char ch : inputString) {
         if (isdigit(ch)) {
             result.push_back(ch);
