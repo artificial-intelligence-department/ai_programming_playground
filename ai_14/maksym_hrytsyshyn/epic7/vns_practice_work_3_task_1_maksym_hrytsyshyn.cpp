@@ -12,4 +12,5 @@ int main () {
     cout << "The number " << num << " is equal to " << hrn << " hrn. " << kop << " kop." << endl;
 
     return 0;
+
 }

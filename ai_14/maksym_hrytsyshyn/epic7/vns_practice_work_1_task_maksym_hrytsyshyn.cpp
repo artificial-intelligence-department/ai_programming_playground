@@ -18,4 +18,5 @@ int main() {
     cout << "s = " << s << endl; // Output of s
     cout << "z = " << z << endl;
     return 0;
+
 }
