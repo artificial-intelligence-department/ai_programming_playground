@@ -9,7 +9,7 @@ int main() {
     int iUserChoose = 1;
 
     do{
-       
+
         string weather;
         cout << "Write weather condition (sunny, rainy, cloudy, snowy, windy)\n";
         cin >> weather;

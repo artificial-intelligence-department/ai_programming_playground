@@ -1,0 +1,61 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+
+
+using namespace std;
+
+
+int main() {
+   int N, M, x, y;
+   cin >> N >> M >> x >> y;
+
+
+   vector<vector<int>> heights(N, vector<int>(M, -1));
+
+
+   queue<pair<int, int>> q;
+   q.push({x - 1, y - 1});
+   heights[x - 1][y - 1] = 0;
+
+
+   int dx[] = {-1, 1, 0, 0};
+   int dy[] = {0, 0, -1, 1};
+
+
+   while (!q.empty()) {
+       pair<int, int> curr = q.front();
+       q.pop();
+
+
+       for (int i = 0; i < 4; ++i) {
+           int nx = curr.first + dx[i];
+           int ny = curr.second + dy[i];
+
+
+           if (nx >= 0 && nx < N && ny >= 0 && ny < M && heights[nx][ny] == -1) {
+               heights[nx][ny] = heights[curr.first][curr.second] + 1;
+               q.push({nx, ny});
+           }
+       }
+   }
+
+
+   int max_height = 0;
+   for (int i = 0; i < N; ++i) {
+       for (int j = 0; j < M; ++j) {
+           max_height = max(max_height, heights[i][j]);
+       }
+   }
+
+
+   for (int i = 0; i < N; ++i) {
+       for (int j = 0; j < M; ++j) {
+           cout << max_height - heights[i][j] << " ";
+       }
+       cout << "\n";
+   }
+
+
+   return 0;
+}
