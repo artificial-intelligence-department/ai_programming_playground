@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+
+int main () {
+    std::string lastName = "Nazar Kukhar";
+    
+int vowelCount = 0;
+for(char c: lastName) {
+    if ( tolower(c) == 'a' tolower(c) == 'e' tolower(c) == 'o' tolower(c) == 'и' tolower(c) == 'y' ) {
+        vowelCount++;
+    }
+}
+
+double letterWidth = vowelCount * 0.8;
+double minFieldLenght = letterWidth + 5;
+
+std::cout <<"Ширина букви" << letterWidth << "метра" << std::endl;
+std::cout << "Мінімальна довжина поля" << minFieldLenght << "метра" <<
+std::endl;
+
+int fieldCenter = static_cast<int>(minFieldLenght), 'fieldCenter' + 1);
+
+std::cout << "Cимволи на 3-х центральних метрах: ";
+    for (int i = startSymbol; i < endSymbol; +i){
+        std::cout << lastName[i];
+    }
+    std::cout << std::endl;
+    
+    return 0;
+}
