@@ -14,4 +14,5 @@ int main() {
     }
     cout << "The sum of the first " << n << " members of the series is equal to " << s << endl;
     
+
 }

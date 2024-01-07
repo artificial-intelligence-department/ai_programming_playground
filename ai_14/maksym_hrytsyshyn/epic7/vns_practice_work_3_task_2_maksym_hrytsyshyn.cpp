@@ -18,4 +18,5 @@ int main() {
     cout << "The number of washers produced per day is equal to " << perday << endl;
     cout << "The number of washers produced per month is equal to " << permonth << endl;
 
+
 }
